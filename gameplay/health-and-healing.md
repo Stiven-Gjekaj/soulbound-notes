@@ -10,7 +10,8 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 
 - **Healing items restore a percentage of max HP**, not a flat amount.
 - **Four healing items**, at 15, 40, 65 and 100 percent: stim, bandage, med kit and hope.
-- **The player carries two, two, one and one of them**, weakest to strongest. Six items.
+- **The player carries two, two, one and one of them**, weakest to strongest. Six items, and
+  the same six for every boss unless a perk says otherwise.
 - **Fractions round up** to the nearest whole HP.
 - **An item heals on the turn it is used**, before the wave rather than after it.
 - **The inventory is restored by the checkpoint**, to whatever it held when the checkpoint was
@@ -90,13 +91,36 @@ computes `itemsPerPage = 2 * columns`, so the ITEM menu shows **four items per p
 a PAGE marker in the last cell when there are more. Six items is two pages. The engine's hard
 cap, `Inventory.inventorySize`, is 8, so six is legal, just not one screen.
 
-Three ways out, and the choice has not been made:
+### Three columns would not fix it on its own
 
-- **Four items total.** One of each, or two stims and one of the rest, fits a page exactly.
-- **Accept two pages.** Six items with a PAGE marker, which the engine already handles.
-- **Raise `columnNumber` to 3.** That yields six items per page, and also changes ACT to nine
-  per page and reshapes every other selection menu in the game. The text box is 320 pixels
-  wide, so three columns gives each name about a third of a line.
+Raising `columnNumber` to 3 gives six items a page arithmetically, and breaks the layout.
+
+The menu does not compute column positions. `SelectMessage` builds the row by inserting tab
+characters, and `TextManager` renders a tab as `currentX = ++tabCount * columnShift`, where
+`columnShift` is a separate serialised field sitting at **265**. So columns land at x = 0, 265
+and 530, and the engine's own width calculation in `UnitaleUtil` is
+`columnShift * columns`, which for three columns is **795 pixels on a 640 pixel screen**. The
+third column renders off the right edge. `SetPlayerOnSelection` uses the same figure to place
+the SOUL, so the cursor would follow it off the screen.
+
+The menu *logic* generalises fine. `GetInventoryPage` is written as `2 * columns`, `GetActPage`
+as `3 * columns`, the PAGE marker as `3 * columns - 1`, and `SelectionChoice` takes rows and
+columns as arguments. Nothing assumes two except the pixels.
+
+So three columns costs a `columnShift` change as well, down to about 176 to fit three columns
+in the span two currently occupy. That is a third less width per name in every selection menu
+in the game, and it also turns ACT into nine options a page and reshapes MERCY and enemy
+select, because all four menus read the same two fields.
+
+### The three real options
+
+- **Four items total.** One of each, or two stims and one of the rest. Fits a page, changes
+  nothing, and costs two items off the bag.
+- **Accept two pages.** Six items with a PAGE marker, which the engine already handles and
+  which costs nothing but a keypress.
+- **Three columns and a narrower shift.** Two serialised fields, and every menu in the game
+  gets rebalanced at once. Worth doing if the roster of items is going to grow, and not worth
+  doing for six.
 
 ## What the smaller bag did to the FIGHT streak
 
@@ -196,11 +220,12 @@ numbers per boss are deferred to the fights that need them.
 
 ## Open questions
 
-- **Four items on one page, six across two, or a three column menu?** See above. All three are
-  workable and they are different amounts of work.
-- **Do the counts hold for every boss, or only the tutorial?** Six uses and 2.75 bars of healing
-  against a thirteen turn fight is forgiving. That is right for a tutorial and probably wrong
-  for the fights behind it.
+- **Four items on one page, six across two, or a narrower three column menu?** See above. All
+  three work and they are very different amounts of work.
+- **Which perks touch the inventory, and how far?** The counts hold for every boss unless a perk
+  changes them, which makes the perk system the only thing that can move a number the fights
+  are otherwise balanced against. See
+  [the Challenger](../general/the-challenger.md).
 - **Are the item names final?** Stim, bandage and med kit were placeholders and hope was
   chosen against them. If any of the first three change, the fourth should be re-checked
   against whatever replaces them, since its job is to sit outside their pattern.

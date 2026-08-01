@@ -16,6 +16,10 @@ Related: [general](general.md), [bosses](../bosses/bosses.md) for who they fight
   to reach them.
 - **They fight powerful characters to grow stronger**, working toward being able to beat the
   villain at the end of it.
+- **They are never seen.** No portrait, no sprite, no body. The player is a SOUL.
+- **They never speak.** Silent throughout.
+- **The bosses are from Soultale**, the original story this game is based on.
+- **The bosses do not know what the Challenger is.** They meet a stranger, not a traveller.
 
 ## What it solves
 
@@ -23,11 +27,37 @@ Playing as a canon character means every fight has to fit that character's story
 happened, whether they would have been there, what it costs them, and what it means that they
 lost or won. A boss rush cannot pay that bill. It has no room for it and it does not want it.
 
-An outsider owes nothing to anybody's timeline. The Challenger can meet a character at any
-point in that character's life without contradicting it, can lose without it meaning anything
-canonical, and can fight somebody who would never have met them. The continuity problem does
-not get solved so much as it stops being a problem, and it stops being one for every character
-added from here on.
+An outsider owes nothing to the timeline. The Challenger can meet a character at any point in
+that character's life without contradicting it, can lose without it meaning anything canonical,
+and can fight somebody who would never have met them. The continuity problem does not get
+solved so much as it stops being a problem, and it stops being one for every character added
+from here on.
+
+The timeline in question is Soultale's, which is this project's own story rather than somebody
+else's. That does not make the problem smaller, it makes it worse: a canon you wrote is one you
+are still writing, and a game that fixes a character's fate is a game that has quietly decided
+something the story had not. The Challenger keeps the two separate. Nothing that happens in a
+fight is something that happened in Soultale.
+
+## Nobody home
+
+Not seen, and does not speak. No portrait, no sprite, no lines. The player is a SOUL in a box
+and that is the entire visible character.
+
+This is the strongest version of the idea rather than a shortcut past drawing one. A named,
+silent, invisible protagonist is a space the player occupies rather than a person they watch.
+The name they typed is theirs and nothing overwrites it with somebody else's face or somebody
+else's opinion.
+
+It is also why the bosses carry every scene. There is no reaction shot and no reply, so
+whatever a fight means has to be in what the boss says and what the boss does. That is a real
+constraint on [writing](../writing/writing.md), and it is the same constraint Undertale-style
+battles already work under.
+
+**The bosses do not know what the Challenger is.** They meet a stranger who turned up to fight
+them. No opponent gets to explain the premise, because no opponent has it. The player is the
+only one holding the whole picture, and the fiction never has to be delivered as exposition by
+somebody who should not know it.
 
 ## It fits what was already built
 
@@ -148,13 +178,11 @@ Those two readings of the same number should be made to agree.
   carried, which the time travel explains neatly for a fixed roster. A live-service ladder of
   escalating threats is a stronger pull toward real progression, and the two would then have to
   be reconciled again.
-- **Is the Challenger ever seen?** The player is a SOUL in the arena. Whether there is a body
-  attached, in dialogue portraits, on the select screen, or at all, has not been decided, and
-  it is the difference between an original character and an implied one. A
-  [graphics](../graphics/graphics.md) question as much as a writing one.
-- **Does the Challenger speak?** A silent protagonist keeps them yours. One with lines makes
-  them somebody. Both work and they are not the same game.
-- **Where do the bosses come from?** "Time and space" is broad enough to mean one universe's
-  history or all of them. The answer sets what the roster can ever contain.
-- **What do the bosses know?** Whether an opponent understands what the Challenger is, or
-  simply finds a stranger in front of them, changes every first line in the game.
+- **Does the player ever learn the premise?** Nobody in the game knows it and the Challenger
+  does not speak, so there is currently no one who can say any of it out loud. Either it lives
+  entirely outside the fiction, in a title screen or a store page, or something in the game has
+  to carry it without a character to carry it.
+- **How does a Soultale reader meet this?** Somebody who knows the story arrives already
+  attached to these characters and expecting things of them. Somebody who does not arrives with
+  a boss rush. The first fight is the same for both and it cannot be written for both by
+  accident.

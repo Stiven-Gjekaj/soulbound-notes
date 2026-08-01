@@ -70,17 +70,24 @@ first run and skippable on every run after. Those are game-wide rules and they l
 
 ## The three attacks are three reading skills
 
-This is why there are exactly three and why they do not blur into each other. Each one asks the
-player to read the arena a different way:
+This is why there are exactly three and why they do not blur into each other. Each asks the
+player to read the arena a different way, and each one has a different relationship to time:
 
-| Attack | Shape | What the player reads |
-| ------ | ----- | --------------------- |
-| Brush | A line, drawn | Direction. Where the stroke is heading. |
-| Bucket | Volume, poured | Area. Which part of the box is not paint. |
-| Splodge | Impact, from a point | Radius. How far from the point is far enough. |
+| Attack | Shape | What the player reads | Moves? |
+| ------ | ----- | --------------------- | ------ |
+| Brush | A region swept | Which part of the arena is about to be covered. She points at it by swiping at it. | The sweep does |
+| Bucket | Paint in bulk | Where the gap is, in a mass that is rising or a shower that is coming down | Yes, constantly |
+| Splodge | A marked area, fixed | How much safe floor is left, and where it is | No |
 
-Direction, area, radius. A player who can read all three can read any combination of them,
-which is what phase 3 asks for.
+Region denial, threading a moving field, and standing somewhere that is not marked. A player
+who can do all three can handle any arrangement of them, which is what phase 3 asks for.
+
+The bucket and the splodge are the pair most at risk of collapsing into each other, since both
+are paint arriving in quantity, and the thing that keeps them apart is motion. A bucket is
+individual projectiles the player threads between while they travel. A splodge is a fixed
+region that is simply dangerous, and adding marks does not add things to dodge, it removes
+floor to stand on. If a splodge ever starts moving, or a bucket ever resolves into a static
+zone, they have become the same attack.
 
 ## The brush is the telegraph
 
@@ -135,9 +142,14 @@ means more waves, and they belong in phase 3.
 
 | Attack | Phase 1 | Phase 2 | Phase 3 |
 | ------ | ------- | ------- | ------- |
-| Brush | A single swipe across one part of the arena, left or right | Strikes down in sections across the arena, one after another, in the manner of Asgore's trident | Alternates the two |
-| Bucket | Fills the arena from the bottom, the player climbs above the rising paint | Thrown into the arena, the player dodges the droplets it throws off | Alternates the two |
-| Splodge | One mark | Two marks | Three marks, and more |
+| Brush | A single swipe covering one side of the arena, left or right | Strikes down in sections across the arena, one after another, in the manner of Asgore's trident | Alternates the two |
+| Bucket | Fills the arena from the bottom, the player climbs above the rising paint | Thrown in, arriving as a shower of small projectiles | Alternates the two |
+| Splodge | One marked area | Two marked areas | Three, and more, at a random count |
+
+The brush points at itself. She swipes right from the player's view and the right side of the
+arena is what gets covered, so the gesture and the danger are the same direction. That is the
+simplest possible telegraph and it is why the brush is the right attack to open on: the answer
+to phase 1's brush is "be on the other side", which is one decision with two options.
 
 Every form escalates along its own attack's axis rather than borrowing another's. The sectioned
 brush is still a direction read, just several of them in sequence. Two marks is still a radius
@@ -152,18 +164,22 @@ Brush and bucket each have two genuinely different forms. A swipe and a sectione
 not the same attack at different volumes, and neither are a rising fill and a thrown bucket.
 Phase 3 can alternate them because there is something to alternate.
 
-Splodge does not work that way. One mark, two marks, three marks and more is a single form with
-a number attached. There is nothing to alternate, so its phase 3 is a straight escalation.
+Splodge does not work that way. One area, two areas, three and more is a single form with a
+number attached. There is nothing to alternate, so its phase 3 is a straight escalation, and in
+phase 3 the count is random rather than fixed.
 
 That is a feature rather than a gap. It gives the three attacks three different escalation
 shapes: two that transform and one that simply intensifies. It also means the recognition test
 in phase 3 is carried by brush and bucket, while splodge is the attack that applies pressure
-underneath it. Splodge is exempt from the opening-gesture constraint below, because there is
-no wrong answer to guess at: more marks is more marks.
+underneath it. Splodge is exempt from the opening-gesture constraint below, because there is no
+wrong answer to guess at: more marked floor is more marked floor.
 
-One thing left hanging by "three marks, and more": whether the count climbs during phase 3, so
-that the last splodge wave is denser than the first, or whether it sits at a fixed number
-above three. The ultimate presumably has the most of all.
+The random count needs a floor and a ceiling. Splodge is the one attack whose difficulty is a
+single number, so an unbounded roll is the one place in the fight where a run can be
+meaningfully harder than another run for no reason the player caused. Since the boss select
+keeps a best time per boss, that variance shows up directly in a record people will compare.
+Three to five is a range that stays unpredictable without any roll being unfair. Bounding it is
+the point, not the specific numbers.
 
 ## Phase 3 is a recognition test, and that sets a hard art constraint
 
@@ -307,13 +323,5 @@ Anything that ever compares death counts across bosses needs to know that.
   place to add depth.
 - **Does phase 3 alternate inside a wave or between waves?** Inside is the recognition test and
   the shorter fight, between is the recap and the longer one. The section above has the maths.
-- **Does the splodge count climb inside phase 3, or sit fixed above three?** "Three marks, and
-  more" leaves it open. Climbing gives the phase its own curve, fixed makes it easier to tune
-  against the ultimate.
-- **What separates the thrown bucket from a splodge?** The phase 2 bucket is thrown and throws
-  off droplets, which is impact spreading from a point, which is the splodge's own job. This is
-  the one pair in the grid that could collapse into a single attack in practice, and it needs
-  watching once both exist.
-- **Does the phase 1 brush swipe always come from the same edge?** Left or right is settled.
-  Whether it enters from the side it lands on, or is drawn across from the opposite one, is the
-  difference between a direction read and a pure position read.
+- **What is the range on the random splodge count?** Random is settled, the bounds are not, and
+  splodge is the one attack whose whole difficulty is a single number.

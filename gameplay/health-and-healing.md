@@ -17,8 +17,8 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 - **The inventory is restored by the checkpoint**, to whatever it held when the checkpoint was
   reached. A checkpoint at the start of a battle therefore refills it.
 - **The player is shown the percentage** when they use an item, not the HP figure.
-- **Six items across two menu pages.** The ITEM menu holds four, and paging is accepted rather
-  than designed around.
+- **Six items across two menu pages**, ordered weakest to strongest. The ITEM menu holds four,
+  and paging is accepted rather than designed around.
 - **Max HP ramps up across the roster**, alongside difficulty.
 - **Each boss sets the player's max HP for its own fight.** The player does not carry a growing
   total between fights.
@@ -124,29 +124,23 @@ items, and the three column rebuild, which is the right change only if the item 
 enough to need it. Neither is closed off. Both stay available if the second page turns out to
 cost more in play than it does on paper.
 
-### Page one is not a cosmetic choice
+### The order stays weakest to strongest
 
-Worth knowing before the inventory order is set: **the menu resets every turn.**
-`UIController` sets `selectedItem = 0` and calls `GetInventoryPage(0, ...)` each time the ITEM
-menu is entered, so it always opens on page one with the cursor on the first item. The player
-does not resume where they left off.
+Stim, stim, bandage, bandage on page one; med kit and hope on page two.
 
-So the cost of page two is not one keypress once. It is paid on every turn the player wants
-something that lives there, in a menu they are opening because they are in trouble.
+The obvious objection is that this buries the two emergency items behind a page turn, and that
+the menu makes it worse by resetting: `UIController` sets `selectedItem = 0` and calls
+`GetInventoryPage(0, ...)` every time the ITEM menu opens, so the player never resumes where
+they left off and pays the page turn on every use.
 
-Which makes the order of the six a real decision. The default order, weakest to strongest,
-puts stim, stim, bandage, bandage on page one and the **med kit and hope on page two**, which
-is precisely backwards: the two items the player reaches for in a panic are the two that cost
-the most navigation to reach, every single time.
+The objection does not survive contact with the turn structure. **Nothing is timed while the
+menu is open.** The wave timer belongs to DEFENDING, and selection has no clock at all, so a
+player choosing an item has as long as they want. There is no panic to design around, only two
+extra keypresses in a state where keypresses cost nothing.
 
-The rule that falls out of it:
-
-> Everything the player might need in a hurry belongs on page one.
-
-A working order: **bandage, bandage, med kit, hope** on page one and the two stims on page two.
-The cursor opens on a bandage, which is the most often correct pick. Hope sits in the far
-corner of page one, reachable but never the thing you hit by accident. The stims go second
-because at 20 max HP a stim is 3 HP, which is a top-up nobody reaches for under pressure.
+Which leaves the reading order as the only thing the sequence has to get right, and weakest to
+strongest is the order the items were designed in and the order they teach themselves in. Page
+one is what you spend, page two is what you save. The paging is doing the sorting for free.
 
 ## What the smaller bag did to the FIGHT streak
 
@@ -246,9 +240,6 @@ numbers per boss are deferred to the fights that need them.
 
 ## Open questions
 
-- **What order do the six sit in?** The menu opens on page one every turn, so the order decides
-  which items are cheap to reach when it matters. A working order is above and it has not been
-  chosen.
 - **Which perks touch the inventory, and how far?** The counts hold for every boss unless a perk
   changes them, which makes the perk system the only thing that can move a number the fights
   are otherwise balanced against. See

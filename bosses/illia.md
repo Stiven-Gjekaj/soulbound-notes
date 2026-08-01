@@ -4,7 +4,13 @@ The first boss, and the one the Discord voted for. She paints, and the arena is 
 carries the tutorial for the whole game, because a boss rush has nowhere else to put one.
 
 Related: [bosses](bosses.md), [gameplay](../gameplay/gameplay.md) for the rules she teaches,
+[progression](../gameplay/progression.md) for the lock she sits behind,
 [graphics](../graphics/graphics.md) for how she looks.
+
+Because she is the tutorial, every other boss is locked until she is cleared, and she is
+relabelled the tutorial boss on the select screen afterwards. Her dialogue is unskippable on the
+first run and skippable on every run after. Those are game-wide rules and they live in
+[progression](../gameplay/progression.md).
 
 ## Settled
 

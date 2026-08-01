@@ -15,5 +15,10 @@ Mechanics, difficulty and pacing: what the player is asked to do, and how hard i
 - Where things sit on screen, which goes in [ui](../ui/ui.md)
 - What a build actually felt like to play, which goes in [testing](../testing/testing.md)
 
+## The notes
+
+- [Progression and retries](progression.md), what is locked, what unlocks it, and what changes
+  on a repeat run
+
 Read [the rules](../rules/scope.md) before writing, and start from the
 [README](../README.md).

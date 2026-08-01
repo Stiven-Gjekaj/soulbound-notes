@@ -2,14 +2,14 @@
 
 Screens, menus, the HUD, and the information they carry.
 
-**Belongs here**
+## Belongs here
 
 - Layout: what is on a screen, and where it sits
 - What each screen is for, and what the player can do from it
 - Readability: text size, contrast, and how long something stays on screen
 - Input: what the keys do, and what happens when the player presses the wrong one
 
-**Not here**
+## Not here
 
 - How a screen looks once it is drawn, which goes in [graphics](../graphics/graphics.md)
 - The words on it, which go in [writing](../writing/writing.md)

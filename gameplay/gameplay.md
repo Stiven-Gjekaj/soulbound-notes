@@ -2,14 +2,14 @@
 
 Mechanics, difficulty and pacing: what the player is asked to do, and how hard it is to do it.
 
-**Belongs here**
+## Belongs here
 
 - Turn structure, soul movement, and what a fight teaches the player
 - Difficulty, and where a fight is hard for the wrong reason
 - Timing: how long a wave runs, how long a turn takes, the gap between attacks
 - Rules the whole game obeys, when they are not about one boss in particular
 
-**Not here**
+## Not here
 
 - One boss's attacks, which go in [bosses](../bosses/bosses.md)
 - Where things sit on screen, which goes in [ui](../ui/ui.md)

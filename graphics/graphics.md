@@ -2,14 +2,14 @@
 
 Art direction, and everything the player sees once it has been drawn.
 
-**Belongs here**
+## Belongs here
 
 - Direction: palette, silhouette, line weight, what the game reads as
 - Sprites and animation, boss by boss and screen by screen
 - Effects: shaders, screen effects, and what an attack looks like when it lands
 - Reference and mood, with the images that go with it
 
-**Not here**
+## Not here
 
 - Where a thing sits on screen, which goes in [ui](../ui/ui.md)
 - What an attack does to the player, which goes in [bosses](../bosses/bosses.md)

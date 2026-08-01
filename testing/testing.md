@@ -2,14 +2,14 @@
 
 What a build actually felt like to play, written down while it is still fresh.
 
-**Belongs here**
+## Belongs here
 
 - Playtest reports: what you did, what happened, and what you expected instead
 - Impressions: which fight dragged, which one clicked, where you stopped caring
 - Things that felt wrong before anyone knows why, which is the most useful kind of note here
 - The build you played, identified by the commit it was built from
 
-**Not here**
+## Not here
 
 - Confirmed bugs, which are issues on the game repository next to the code that fixes them
 - The design argument a report starts, which goes in the folder it is about

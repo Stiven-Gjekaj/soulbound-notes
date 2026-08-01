@@ -57,6 +57,10 @@ read. See [progression](../gameplay/progression.md).
 
 - **Does the relabel change her position in the list?** A tutorial boss sitting in the first
   slot forever is one reading. Moving her out of the numbered run is another.
+- **What does the screen do when the roster grows?** The live-service plan in
+  [the Challenger](../general/the-challenger.md) adds bosses in batches, so this screen has to
+  hold a list that gets longer after a player has finished it. Completion counts change under
+  them, a cleared game becomes uncleared, and the layout needs somewhere to put arrivals.
 - **Is the lock state visible before it matters?** On a fresh save every entry but one is
   greyed out, which is clear. What is less clear is whether the player is told why, or left to
   work out that clearing the first one is the key.

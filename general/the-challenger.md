@@ -105,8 +105,42 @@ interpolating a player-chosen name reads badly however careful it is.
 
 The name is for the player. The title is for everybody else in the game.
 
+## The live-service plan
+
+The original intent is for the roster to keep growing, with each batch of characters bringing a
+new major threat, so that the Challenger always has a bigger reason to keep fighting.
+
+The premise is what makes that possible. A roster of canon characters runs out at the edge of
+one story. A Challenger from outside has no such edge, so adding a character never needs a
+justification beyond somebody wanting to fight them. That is the strongest single argument for
+the whole idea and it should be the thing that survives if anything else about it changes.
+
+Three consequences, all of which touch decisions already made.
+
+**"The villain at the end" and "a new threat per batch" are different structures.** One is a
+story with an ending. The other is a series of eras, each with its own antagonist, where the
+ending keeps moving. Seasonal games mostly do the second and describe it as the first. Both
+work, they need different writing, and it is much cheaper to know which one this is before the
+first threat is written than after.
+
+**Completion counting stops being a fixed number.** The tutorial boss counts toward completion,
+which was decided when the roster was a known size. A growing roster turns "four of seven" into
+a figure that changes under the player, and a completed game into one that becomes incomplete
+when a batch lands. See [boss select](../ui/boss-select.md), which is where a player would
+notice.
+
+**v1.0 stops meaning finished.** The game repository's milestones run to v1.0 as though it were
+the end of the work. Under a live-service plan it is the start of the part that lasts longest.
+Those two readings of the same number should be made to agree.
+
 ## Open questions
 
+- **One villain, or one per batch?** See above. It is the difference between a story and a
+  season.
+- **Does the Challenger get stronger between batches?** Per-fight max HP means growth is not
+  carried, which the time travel explains neatly for a fixed roster. A live-service ladder of
+  escalating threats is a stronger pull toward real progression, and the two would then have to
+  be reconciled again.
 - **Is the Challenger ever seen?** The player is a SOUL in the arena. Whether there is a body
   attached, in dialogue portraits, on the select screen, or at all, has not been decided, and
   it is the difference between an original character and an implied one. A

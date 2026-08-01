@@ -36,9 +36,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **FIGHT is taught by her and never lands.** She prompts the player to use it and then blocks
   the attack, which is how the verb gets explained. The player may keep attacking. She keeps
   blocking, and she gets irritated, and the irritation makes the final ultimate harder.
-- **Irritation is binary, and it takes a perfect streak.** It triggers only if the player uses
-  FIGHT on every single turn after she teaches it. The turn she asks for does not count, and
-  one turn spent on anything else clears it. There are two ultimates, not a curve.
+- **Irritation is binary, and it takes a majority.** It triggers when the player uses FIGHT on
+  more than half the turns after she teaches it, which is the same moment she runs out of
+  written responses to being attacked. There are two ultimates, not a curve.
 - **Dying does not end the run.** Illia brings the player back to life at the turn before the
   one they died on, without limit. Her checkpoint is one turn, which is the most generous
   setting of a rule every boss has. See [progression](../gameplay/progression.md).
@@ -241,39 +241,46 @@ consequence lands at the end rather than immediately.
 player for following its own instruction is worse than one that teaches nothing. The count
 starts on the next turn, the first attack the player chose for themselves.
 
-### Irritation is a streak, not a tally
+### Irritation is a majority, and her dialogue sets the number
 
-It is binary. There are two ultimates, a normal one and a harder one, and no curve between
-them. What selects the harder one is not how many times the player attacked but whether they
-attacked **every turn** after the lesson, without a single exception.
+It is binary. There are two ultimates, a normal one and a harder one, with no curve between
+them. What selects the harder one is the player using FIGHT on **more than half** the turns.
+The attacks do not have to be consecutive, and the turn she asks for does not count toward
+either side of the fraction.
 
-That is a generous rule and a pointed one. Attacking out of curiosity costs nothing, because
-one turn spent on ACT or ITEM or MERCY clears it. The harder ultimate is reserved for a player
-who decided that attacking her was the answer and never revisited it. She is not punishing
-violence, she is answering commitment.
+The threshold is not a tuning number picked in isolation. She has a set of written responses to
+being attacked, one for each attack, and the harder ultimate is what happens when she reaches
+the end of them. Running out of things to say **is** the irritation. So the size of the
+dialogue pool is the balance number, which means writing decides it rather than tuning.
 
-It is also one flag rather than a counter, and the flag only ever moves one way: it starts set
-after the lesson and is cleared the first time a turn goes elsewhere. That has a consequence
-worth being deliberate about. A player who breaks the streak on turn two and then attacks for
-the rest of the fight gets the normal ultimate, and she has no mechanical reason to react to
-those attacks at all. Whether she still comments on them is a [writing](../writing/writing.md)
-question, but she should, or the back half of the fight goes quiet on a player who is still
-swinging.
+That couples two things that are usually independent, and it is worth stating plainly: **the
+number of FIGHT responses she has is a gameplay number.** Adding a line moves the threshold.
+Cutting one moves it the other way. They cannot be edited separately.
 
-### It has to be visible
+Against the current 13 wave structure, that is thirteen turns, one of which is the lesson, so
+more than half of the remaining twelve is seven. **She needs seven distinct responses to
+FIGHT.** If the wave count changes, that number changes with it.
 
-If the only place her state shows is the difficulty of a wave three minutes later, the player
-experiences an unexplained spike rather than a consequence they caused. She needs a tell, in
-her dialogue, her expression or her painting, on each turn the streak is still alive. The tell
-is also what tells the player they can stop. See [graphics](../graphics/graphics.md) and
-[writing](../writing/writing.md).
+### The dialogue is the tell, so visibility is free
+
+A rule that only shows up as a harder wave three minutes later would read as an unexplained
+spike rather than as a consequence the player caused. This one cannot, because the counter and
+the telegraph are the same object.
+
+Every attack gets a different line, so the player attacking repeatedly is watching her run
+down: the responses get shorter, or sharper, or more tired, and then they stop. Her last one is
+the warning, and it arrives exactly when there is still time to stop. Nothing extra has to be
+built for it, but the writing has to be ordered rather than a bag of interchangeable lines. See
+[writing](../writing/writing.md), and [graphics](../graphics/graphics.md) if her expression
+carries part of it.
 
 ### It survives death
 
-The streak is not reset by dying. Since she rewinds the player to the turn before, that turn
-gets replayed, and the replay is what counts: if the player attacked on the first attempt and
-used an item on the second, the streak is broken. The state follows the timeline she rewound
-to, not the one she erased.
+Dying does not reset the count. Since she rewinds the player to the turn before, that turn gets
+replayed, and the timeline that stands is the one that counts: an attack made on an attempt she
+erased is not counted twice, and if the player attacked on the first attempt and used an item
+on the replay, the replay is what the count sees. The same applies to the denominator, since a
+rewound turn is one turn rather than two.
 
 ## The ultimate
 
@@ -318,9 +325,13 @@ Anything that ever compares death counts across bosses needs to know that.
 
 ## Open questions
 
-- **Does she keep reacting to FIGHT after the streak is broken?** Mechanically nothing is
-  happening any more, but a player can still be attacking every turn, and silence would read as
-  the fight having stopped noticing them.
+- **What does she say on the attack after the last one?** The pool is seven deep and the fight
+  has more turns than that, so a committed player will attack again with nothing left in the
+  bank. A repeated final line, a silence that is deliberately a silence, or something that only
+  exists past the threshold. Whichever it is, it is the first thing the player hears after the
+  fight has already been decided.
+- **Is the count visible anywhere but her lines?** It does not need to be, but a player who
+  half-noticed the responses shortening has no way to check where they are.
 - **Is her fight timed across a rewind?** Records include a best time per boss. If the clock
   keeps running through a death and a revive, an unlimited rewind means her best time is still
   a real number. If it does not, her times are not comparable with anyone's, including her own.

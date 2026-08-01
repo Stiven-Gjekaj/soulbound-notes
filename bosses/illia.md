@@ -38,7 +38,8 @@ first run and skippable on every run after. Those are game-wide rules and they l
   blocking, and she gets irritated, and the irritation makes the final ultimate harder.
 - **Irritation is binary, and it takes a majority.** It triggers when the player uses FIGHT on
   more than half the turns after she teaches it, which is the same moment she runs out of
-  written responses to being attacked. There are two ultimates, not a curve.
+  written responses to being attacked. There are two ultimates, not a curve. The count is
+  invisible: her dialogue is the only signal it exists.
 - **Dying does not end the run.** Illia brings the player back to life at the turn before the
   one they died on, without limit. Her checkpoint is one turn, which is the most generous
   setting of a rule every boss has. See [progression](../gameplay/progression.md).
@@ -260,18 +261,22 @@ Against the current 13 wave structure, that is thirteen turns, one of which is t
 more than half of the remaining twelve is seven. **She needs seven distinct responses to
 FIGHT.** If the wave count changes, that number changes with it.
 
-### The dialogue is the tell, so visibility is free
+### The count is invisible, so the dialogue is the whole tell
 
-A rule that only shows up as a harder wave three minutes later would read as an unexplained
-spike rather than as a consequence the player caused. This one cannot, because the counter and
-the telegraph are the same object.
+There is no meter, no counter and no icon. Nothing on screen says how close the player is, and
+that is deliberate.
 
-Every attack gets a different line, so the player attacking repeatedly is watching her run
-down: the responses get shorter, or sharper, or more tired, and then they stop. Her last one is
-the warning, and it arrives exactly when there is still time to stop. Nothing extra has to be
-built for it, but the writing has to be ordered rather than a bag of interchangeable lines. See
-[writing](../writing/writing.md), and [graphics](../graphics/graphics.md) if her expression
-carries part of it.
+Which puts the entire mechanic on seven lines of dialogue. A rule that only shows up as a
+harder wave three minutes later would read as an unexplained spike rather than as a consequence
+the player caused, and her lines are the only thing standing between this rule and being
+exactly that.
+
+So they cannot be a bag of interchangeable barks. They have to be an ordered run-down: shorter,
+or sharper, or more tired, in a direction a player can feel without being told there is a
+direction. Her seventh line is the warning, and it has to land as one while there is still time
+to stop. That is a harder writing job than seven reactions to being hit, and it is load-bearing
+in a way dialogue usually is not. See [writing](../writing/writing.md), and
+[graphics](../graphics/graphics.md) if her expression carries part of it.
 
 ### It survives death
 
@@ -334,8 +339,6 @@ re-enter. Her number running high is the number being right.
   bank. A repeated final line, a silence that is deliberately a silence, or something that only
   exists past the threshold. Whichever it is, it is the first thing the player hears after the
   fight has already been decided.
-- **Is the count visible anywhere but her lines?** It does not need to be, but a player who
-  half-noticed the responses shortening has no way to check where they are.
 - **Is her fight timed across a rewind?** Records include a best time per boss. If the clock
   keeps running through a death and a revive, an unlimited rewind means her best time is still
   a real number. If it does not, her times are not comparable with anyone's, including her own.

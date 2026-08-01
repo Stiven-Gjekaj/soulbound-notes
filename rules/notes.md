@@ -35,6 +35,9 @@ Every note opens with a single `#` heading matching its subject, then one or two
 what the note is about, then the links to whatever it relates to. Somebody arriving from the
 graph should know within five seconds whether they are in the right place.
 
+The [README](../README.md) is the exception. It is the vault's front page rather than a note,
+and it is titled by the repository it sits in.
+
 If the note has been settled, the decision goes immediately under the heading, in a sentence.
 Nobody should have to read an argument to the end to find out how it came out.
 

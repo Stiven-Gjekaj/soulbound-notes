@@ -1,7 +1,5 @@
 <div align="center">
 
-# Soulbound Notes
-
 ### The discussion vault behind Soulbound
 
 _Design notes, arguments, and the decisions they produced. Made by PaperTrail._

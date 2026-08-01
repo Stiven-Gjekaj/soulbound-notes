@@ -22,6 +22,9 @@ Related: [bosses](bosses.md), [gameplay](../gameplay/gameplay.md) for the rules 
   a canvas nobody can fight in.
 - **The player cannot paint back.** It is not one of her attacks.
 - **Two to four minutes of wave time**, dialogue not counted.
+- **She ends the fight herself**, once the player survives her final ultimate attack. The
+  ultimate is a long string of attacks run back to back. Her HP reaching zero is not the
+  ending.
 
 ## What lost
 
@@ -109,21 +112,38 @@ reading one is no longer enough and the player has to decide which brush matters
 costs no new art and no new attack, it is the exam the first two phases were revising for, and
 it is the only moment where her adaptive improviser characterisation arrives at full strength.
 
+## The ultimate
+
+The fight ends when the player survives it, so it is the only wave in the game so far whose
+failure condition and success condition are the same event. Three things follow.
+
+It earns its length in a way no other wave does. A long single wave is exhausting in the middle
+of a fight and correct at the end of one, and this is the one place where thirty to sixty
+seconds is right rather than indulgent.
+
+It has to be survivable without knowing it in advance, because the first time anyone sees it is
+the run where it decides the fight. Whatever it does, it is built from the three attacks the
+player has spent two phases learning, and it introduces nothing new. The novelty is the length
+and the density, not the vocabulary.
+
+And it is where the retry cost lands. Dying to the last twenty seconds of a three minute fight
+is the most expensive failure the game can hand out, so what the retry costs is a real
+decision, not a detail. See [progression](../gameplay/progression.md).
+
 ## Open questions
 
-- **How does the fight end?** FIGHT is taught in phase 1, so it works, but nothing yet says
-  whether the fight ends by damage or by her deciding the player passed. The framing of her as
-  testing rather than fighting points at MERCY, and that changes what phase 3's last wave is
-  for.
-- **Where does the tutorial live when the player can pick any boss first?** The boss select
-  lets a player open with boss three. Either the other bosses are locked until Illia is
-  cleared, or the tutorial cannot live inside her. This is cheap to decide now and expensive
-  later.
-- **Is dialogue skippable on a retry?** Her wave time is two to four minutes, but the fight
-  including dialogue is longer, and a boss rush is replayed. Unskippable dialogue on the fifth
-  attempt is the fastest way to make a good boss hated.
-- **What separates the bucket from the splodge in practice?** Both are paint arriving in
-  quantity. The table above says volume against impact, which is a clean split on paper, and
-  it needs one worked example each before it is real.
-- **What does phase 2 do with brush and splodge?** The bucket has its worked example. The
-  other two do not.
+- **What is FIGHT for?** It is taught in phase 1, so it works, but damage no longer ends the
+  fight. A tutorial that teaches a button and then reveals the button never mattered has
+  taught the player something false. The cheapest honest fix is that FIGHT does not shorten
+  the fight but does change how it ends, which keeps the verb real and costs one flag and one
+  alternative block of end text. That is a proposal, not a decision.
+- **What does dying in the ultimate cost?** Retrying from the start of the fight is the boss
+  rush default and it is a three minute walk back. Worth deciding deliberately rather than
+  inheriting.
+- **How much healing does the player carry?** ITEM is taught in phase 1, so items exist. How
+  many the player brings into the ultimate is the difficulty valve for the whole fight, and it
+  is currently unset.
+- **What separates the bucket from the splodge in practice?** Phase 2's thrown bucket throws
+  off droplets, and phase 2's splodge is two or three splatters at once. Those are close
+  enough that they could read as the same attack. The split on paper is volume against impact,
+  and it needs to survive contact with the actual waves.

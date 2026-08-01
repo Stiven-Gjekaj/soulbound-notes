@@ -17,9 +17,9 @@ all of this, [ui](../ui/ui.md) for the rest of the screens.
 - **Dialogue is unskippable on the first run and skippable on every run after it.** Skipping
   jumps the whole dialogue block rather than speeding it up. The writing gets heard once, and
   after that it never stands between the player and a retry.
-- **Death sends the player to their last checkpoint, and each boss sets where that is.** It is
-  a per-boss dial rather than one global rule. [Illia](../bosses/illia.md) sets hers to one
-  turn, the shortest possible, because she is the tutorial.
+- **Death sends the player to their last checkpoint, and each boss sets where that is and
+  whether the clock keeps running.** Both are per-boss dials rather than global rules.
+  [Illia](../bosses/illia.md) sets one turn, unlimited retries, and a clock that never stops.
 - **She counts toward completion.** Being relabelled the tutorial boss changes her label on the
   select screen and nothing else. If the game says four bosses cleared, she is one of the ones
   it is counting.
@@ -47,13 +47,27 @@ Three pieces of state, all per save rather than per session:
 The first two are new. Neither is expensive, and deciding them now means the boss select and
 the save format get built once rather than retrofitted at boss four.
 
-## Checkpoints are a per-boss dial
+## Checkpoints are a per-boss dial, with two settings
 
-Every boss decides how far back a death sends the player, so "how forgiving is this fight"
-becomes a property of the fight rather than of the game. Illia sets it to one turn and lifts
-the limit on retries, which is what a tutorial should do. Nothing says any other boss is that
-generous, and the sensible default for the rest is the start of the fight until somebody argues
-otherwise.
+A checkpoint is not one number. Each boss sets both:
+
+- **How far back a death sends the player.** Illia sets one turn. The default for everyone else
+  is the start of the fight until somebody argues otherwise.
+- **Whether the clock keeps running through the death.** Illia's does, which is what gives her
+  otherwise unloseable fight a skill ceiling. This is hers rather than a game-wide rule.
+
+So "how forgiving is this fight" is a property of the fight rather than of the game, and the
+two settings can be mixed. A boss with a generous checkpoint and a running clock is testing
+speed. One with a harsh checkpoint and a paused clock is testing survival and nothing else.
+That is a genuinely useful pair of dials, and it is worth using deliberately rather than
+setting both to the same thing everywhere.
+
+The pair does have a cost worth naming. Death counts are presented identically for every boss,
+on the argument that a death is a death and the forgiving fight is the one you had every chance
+to survive. Best time does not get that treatment automatically: if one boss charges its deaths
+to the clock and the next does not, the column means two different things. The two records are
+being held to different standards, and that is a choice rather than an oversight only if it is
+made on purpose.
 
 Worth being deliberate about, because it is the difference between a boss rush that is a series
 of tests and one that is a series of gauntlets, and the answer can differ per boss without the
@@ -67,7 +81,6 @@ and they should find it out some other way first.
   in everyone's head is currently "start of the fight" without that having been chosen.
 - **How does the player know where the checkpoint is before they die?** A per-boss dial the
   player cannot see is a surprise rather than a rule.
-- **Does the clock keep running through a death everywhere, or only against Illia?** Hers does,
-  which is what gives her otherwise unloseable fight a skill ceiling. Whether that is a
-  game-wide rule or a property of her checkpoint has not been said. See
-  [Illia](../bosses/illia.md).
+- **Which bosses charge deaths to the clock?** It is a per-boss setting now, and only Illia's
+  is decided. Leaving the rest unset means best time quietly means something different
+  boss to boss.

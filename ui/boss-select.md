@@ -47,10 +47,11 @@ fight, because the forgiving fight is the one you had every chance to survive. A
 against her is accurate rather than misleading, and a second reading convention for one row
 would cost the screen more than it explains.
 
-Best time works the same way for the same reason. Her clock keeps running through a death and a
-revive, so her times are real numbers on the same terms as everyone else's, and the column
-means one thing all the way down. It is also the only place her fight has a skill ceiling,
-since she cannot be lost to. See [Illia](../bosses/illia.md).
+Best time is not settled the same way, and the screen is where that shows. Whether a death is
+charged to the clock is a per-boss checkpoint setting, and only Illia's is decided: hers runs,
+which is the only reason her unloseable fight has a skill ceiling at all. Until the rest are
+set, the best time column can quietly mean two different things depending on which row is being
+read. See [progression](../gameplay/progression.md).
 
 ## Open questions
 

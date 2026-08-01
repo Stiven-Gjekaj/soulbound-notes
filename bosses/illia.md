@@ -45,8 +45,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
   setting of a rule every boss has. See [progression](../gameplay/progression.md).
 - **Rewound deaths still count** in her record on the boss select, presented the same way as
   every other boss's.
-- **The clock keeps running through a death and a revive.** The rewind costs time, not
-  progress.
+- **The clock keeps running through a death, a revive, and everything she says about it.** The
+  rewind costs time, not progress. This is a property of her checkpoint rather than a rule
+  every boss follows.
 - **The player carries basic healing only.** Stim, bandage and med kit, healing 20, 30 and 60
   percent of max HP. They exist so the player learns what ITEM does, not so they can out-heal a
   wave. The names are placeholders. See
@@ -329,8 +330,13 @@ brought.
 ### The rewind costs time, not progress
 
 The clock does not stop for a death. It runs through dying, through her reviving the player,
-and into the replayed turn, so a death is free in progress and expensive in the only currency
-the records keep.
+through whatever she says while doing it, and into the replayed turn, so a death is free in
+progress and expensive in the only currency the records keep.
+
+That last part has a consequence on a first run, where dialogue cannot be skipped. If she has
+something to say every time she brings the player back, that line is charged to their time, and
+a player dying repeatedly hears it repeatedly. Either it is short, or there are several of
+them, or it is the one piece of her writing that gets to be skippable early.
 
 That is what stops the tutorial being a fight with no skill ceiling. It cannot be lost, so
 clearing it says nothing, but clearing it quickly says everything, and the gap between a player
@@ -359,9 +365,9 @@ re-enter. Her number running high is the number being right.
   bank. A repeated final line, a silence that is deliberately a silence, or something that only
   exists past the threshold. Whichever it is, it is the first thing the player hears after the
   fight has already been decided.
-- **Does the clock run through her revive dialogue too?** It runs through the death, which is
-  settled. Whether it runs while she is saying something about it is a smaller question with a
-  real answer, because on a first run that dialogue cannot be skipped.
+- **What does she say when she revives the player, and how many ways?** It is charged to their
+  time and it cannot be skipped on a first run, so one long line repeated a dozen times is the
+  version to avoid.
 - **What max HP does she set?** Her fight sets the player's total the way every fight does, and
   hers is the one the whole game's numbers get read against, since it is the first one anybody
   sees. See [health and healing](../gameplay/health-and-healing.md), where the open questions

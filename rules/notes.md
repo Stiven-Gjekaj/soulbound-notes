@@ -67,15 +67,29 @@ note hangs off that.
 
 ## Folders
 
-New notes sit at the root. Once there are three of a kind, they get a folder together and the
-README's tree gains a line.
+Every note lives in a topic folder. There are eight, and each one has a README saying exactly
+what it takes and what it does not:
 
-`rules/` exists because these three pages are already a kind. Nothing else has earned a folder
-yet, and folders created in advance stay empty and then get filled with the wrong thing.
+| Folder | Takes |
+| ------ | ----- |
+| [general](../general/README.md) | The project as a whole, and anything with no better home |
+| [gameplay](../gameplay/README.md) | Mechanics, difficulty, pacing |
+| [bosses](../bosses/README.md) | One note per boss: attacks, phases, the shape of the fight |
+| [ui](../ui/README.md) | Screens, menus, the HUD, and the information they carry |
+| [graphics](../graphics/README.md) | Art direction, sprites, effects |
+| [writing](../writing/README.md) | Dialogue, names, flavour text, tone |
+| [sound-design](../sound-design/README.md) | Music, sound effects, audio tells |
+| [testing](../testing/README.md) | Playtest reports and impressions of a build |
+
+Pick the folder by what the note is mostly about, then link to the others instead of
+duplicating them. A note about how a boss's second phase sounds is a `bosses` note linking to
+`sound-design`, not two half-notes that each cover a bit of it.
+
+If a note truly fits nowhere, it goes in `general`. When `general` grows three notes about the
+same new thing, that cluster becomes the ninth folder.
 
 Folders do not affect the graph. Links do. Moving a note between folders is safe as long as
-the links that pointed at it move with it, which Obsidian handles when you rename from inside
-the app.
+the links pointing at it move too, which Obsidian handles when you rename from inside the app.
 
 ## Images
 

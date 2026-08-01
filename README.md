@@ -97,14 +97,20 @@ again, which is a slower way of not writing it.
 
 ```
 README.md           this page, and the way in
-rules/              how the vault works
-  scope.md            what belongs here
-  notes.md            how to write and connect a note
-  style.md            how a note should read
+rules/              how the vault works, in three pages
+general/            the project as a whole
+gameplay/           mechanics, difficulty, pacing
+bosses/             one note per boss
+ui/                 screens, menus, the HUD
+graphics/           art direction, sprites, effects
+writing/            dialogue, names, tone
+sound-design/       music, sound effects, audio tells
+testing/            playtest reports and build impressions
 ```
 
-Topic folders appear as they fill. A new note can sit at the root until there are three of its
-kind, and then they get a folder together. [Writing notes](rules/notes.md) has the details.
+Every note goes in one of the topic folders, and each folder's README says what it takes and
+what belongs to a neighbour instead. [Writing notes](rules/notes.md) has the whole table in
+one place.
 
 ---
 

@@ -17,6 +17,8 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 - **The inventory is restored by the checkpoint**, to whatever it held when the checkpoint was
   reached. A checkpoint at the start of a battle therefore refills it.
 - **The player is shown the percentage** when they use an item, not the HP figure.
+- **Six items across two menu pages.** The ITEM menu holds four, and paging is accepted rather
+  than designed around.
 - **Max HP ramps up across the roster**, alongside difficulty.
 - **Each boss sets the player's max HP for its own fight.** The player does not carry a growing
   total between fights.
@@ -112,15 +114,39 @@ in the span two currently occupy. That is a third less width per name in every s
 in the game, and it also turns ACT into nine options a page and reshapes MERCY and enemy
 select, because all four menus read the same two fields.
 
-### The three real options
+### Two pages, accepted
 
-- **Four items total.** One of each, or two stims and one of the rest. Fits a page, changes
-  nothing, and costs two items off the bag.
-- **Accept two pages.** Six items with a PAGE marker, which the engine already handles and
-  which costs nothing but a keypress.
-- **Three columns and a narrower shift.** Two serialised fields, and every menu in the game
-  gets rebalanced at once. Worth doing if the roster of items is going to grow, and not worth
-  doing for six.
+Six items across two pages. The engine already handles the paging and the PAGE marker, nothing
+is rebuilt, and no item comes out of the bag to make a layout fit.
+
+What lost: cutting to four items, which would have bought a single page at the cost of two
+items, and the three column rebuild, which is the right change only if the item roster grows
+enough to need it. Neither is closed off. Both stay available if the second page turns out to
+cost more in play than it does on paper.
+
+### Page one is not a cosmetic choice
+
+Worth knowing before the inventory order is set: **the menu resets every turn.**
+`UIController` sets `selectedItem = 0` and calls `GetInventoryPage(0, ...)` each time the ITEM
+menu is entered, so it always opens on page one with the cursor on the first item. The player
+does not resume where they left off.
+
+So the cost of page two is not one keypress once. It is paid on every turn the player wants
+something that lives there, in a menu they are opening because they are in trouble.
+
+Which makes the order of the six a real decision. The default order, weakest to strongest,
+puts stim, stim, bandage, bandage on page one and the **med kit and hope on page two**, which
+is precisely backwards: the two items the player reaches for in a panic are the two that cost
+the most navigation to reach, every single time.
+
+The rule that falls out of it:
+
+> Everything the player might need in a hurry belongs on page one.
+
+A working order: **bandage, bandage, med kit, hope** on page one and the two stims on page two.
+The cursor opens on a bandage, which is the most often correct pick. Hope sits in the far
+corner of page one, reachable but never the thing you hit by accident. The stims go second
+because at 20 max HP a stim is 3 HP, which is a top-up nobody reaches for under pressure.
 
 ## What the smaller bag did to the FIGHT streak
 
@@ -220,8 +246,9 @@ numbers per boss are deferred to the fights that need them.
 
 ## Open questions
 
-- **Four items on one page, six across two, or a narrower three column menu?** See above. All
-  three work and they are very different amounts of work.
+- **What order do the six sit in?** The menu opens on page one every turn, so the order decides
+  which items are cheap to reach when it matters. A working order is above and it has not been
+  chosen.
 - **Which perks touch the inventory, and how far?** The counts hold for every boss unless a perk
   changes them, which makes the perk system the only thing that can move a number the fights
   are otherwise balanced against. See

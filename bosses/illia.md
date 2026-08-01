@@ -48,9 +48,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **The clock keeps running through a death, a revive, and everything she says about it.** The
   rewind costs time, not progress. This is a property of her checkpoint rather than a rule
   every boss follows.
-- **The player carries basic healing only.** Stim, bandage and med kit, healing 20, 30 and 60
+- **The player carries basic healing only.** Stim, bandage and med kit, healing 15, 40 and 65
   percent of max HP. They exist so the player learns what ITEM does, not so they can out-heal a
-  wave. The names are placeholders. See
+  wave, and none of them is a full heal. The names are placeholders. See
   [health and healing](../gameplay/health-and-healing.md).
 
 ## What lost
@@ -376,11 +376,9 @@ re-enter. Her number running high is the number being right.
   the real names are a [writing](../writing/writing.md) job. Worth doing early, since the
   tutorial is where the player learns the game's vocabulary and placeholder names get into
   screenshots.
-- **Does the item ladder differ by more than amount?** Three items separated only by size teach
-  one lesson: bigger is better, always use the biggest, and 20 against 30 percent is close
-  enough that even that lesson is faint. A second axis, a cheap one that heals instantly
-  against a large one that costs the rest of the turn, is what turns ITEM from a button into a
-  choice. Not required for a tutorial, but it is the cheapest place in the game to add depth.
+- **How many of each does she give the player?** The counts are unset, and her fight is where
+  the player learns that items run out. See
+  [health and healing](../gameplay/health-and-healing.md).
 - **What is in the ultimate, in what order?** Everything, in one wave, is the shape. Which
   forms, how many passes, and how long it runs is the last piece of the fight that is still
   entirely open, and it is the piece the whole thing ends on.

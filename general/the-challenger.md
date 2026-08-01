@@ -84,17 +84,24 @@ Two alternates were weighed and are worth keeping on the shelf: **resolve** and 
 coat**, which say the same things less literally. Fists and worn coat won on being immediately
 legible on a stats line at 640x480.
 
-### These are not cosmetic
+### These were not cosmetic
 
-The names feed real numbers, so this is not a text change.
-`FightUIController.cs` computes damage dealt from `WeaponATK`, and `PlayerController.cs`
-reduces damage taken by `floor((DEF + ArmorDEF) / 5)`, so five points of armour is one point of
-damage prevented. Both values come from looking the equipment name up in the item library, so
-a name with no entry behind it resolves to zero.
+The names feed real numbers. `FightUIController.cs` computes damage dealt from `WeaponATK`,
+and `PlayerController.cs` reduces damage taken by `floor((DEF + ArmorDEF) / 5)`, so five points
+of armour is one point of damage prevented. Both values come from looking the equipment name up
+in the item pools.
 
-Zero is the right value for both here. Starting gear that does nothing is the point. But it
-means the rename is only finished when the item library agrees with it, rather than when the
-two strings in `PlayerCharacter.cs` change.
+They are also the engine's fallback state: whenever a mod removes the currently equipped item
+from the library, `Inventory.cs` reverts the player to those two names. So the defaults and the
+fallbacks had to move together, and the equipment pools had to learn the new names, or the
+lookup would have resolved to zero by failing rather than by design.
+
+Both now sit in the weapon and armor pools at 0, which is what the old defaults should always
+have been: neither Stick nor Bandage was in either pool, so the engine looking up its own
+starting gear used to warn that it did not exist. Stick and Bandage stay in the library as
+ordinary items, which is what leaves Bandage free to be a healing item.
+
+This is done, on the game repository, as `v0.6.3`.
 
 ## Being addressed by a title
 

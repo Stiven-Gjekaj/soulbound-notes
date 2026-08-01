@@ -11,6 +11,7 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 - **Healing items restore a percentage of max HP**, not a flat amount.
 - **The three basic items heal 15, 40 and 65 percent**, being stim, bandage and med kit.
 - **Fractions round up** to the nearest whole HP.
+- **An item heals on the turn it is used**, before the wave rather than after it.
 - **The player is shown the percentage** when they use an item, not the HP figure.
 - **Max HP ramps up across the roster**, alongside difficulty.
 - **Each boss sets the player's max HP for its own fight.** The player does not carry a growing
@@ -56,6 +57,19 @@ Rounding up is the friendlier direction and it does two useful things. It matter
 health totals, where the difference between 3 and 4 can be a whole extra hit survived, and it
 guarantees every item always heals at least 1 HP, so no item can ever be a wasted turn no
 matter how small the player's maximum gets.
+
+## Healing lands on the turn it is spent
+
+An item takes effect immediately, before the wave that turn produces, rather than resolving
+afterwards.
+
+That makes ITEM a reactive option rather than only a pre-emptive one. A player who came out of
+the last wave on two HP can fix it before the next one starts, instead of having to have
+predicted it a turn early. It is the difference between an inventory that rewards foresight and
+one that punishes its absence, and for the fight that teaches the menu it should be the former.
+
+The cost is the turn. Using an item is a turn not spent on anything else, which is the whole
+price and is enough of one.
 
 ## The player sees the percentage
 
@@ -105,5 +119,3 @@ numbers per boss are deferred to the fights that need them.
 - **What does Illia's fight set max HP to?** Every fight sets its own, and hers is the one the
   player meets first, so it is the total every percentage in the game gets read against on the
   first encounter.
-- **Do items heal on the same turn they are used, or the next one?** A 65% heal that lands
-  immediately and one that lands after the wave are different items with the same number.

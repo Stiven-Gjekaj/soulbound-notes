@@ -9,9 +9,8 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 ## Settled
 
 - **Healing items restore a percentage of max HP**, not a flat amount.
-- **Four healing items**, at 15, 40, 65 and 100 percent. The first three are stim, bandage and
-  med kit. The fourth has no name yet.
-- **The player carries four, three, two and one of them**, weakest to strongest.
+- **Four healing items**, at 15, 40, 65 and 100 percent: stim, bandage, med kit and lifeline.
+- **The player carries two, two, one and one of them**, weakest to strongest. Six items.
 - **Fractions round up** to the nearest whole HP.
 - **An item heals on the turn it is used**, before the wave rather than after it.
 - **The player is shown the percentage** when they use an item, not the HP figure.
@@ -34,42 +33,74 @@ has to retune the inventory every time a boss changes the numbers.
 
 | Item | Heals | Carried | At 20 max HP | Whole bars carried |
 | ---- | ----- | ------- | ------------ | ------------------ |
-| Stim | 15% | 4 | 3 | 0.60 |
-| Bandage | 40% | 3 | 8 | 1.20 |
-| Med kit | 65% | 2 | 13 | 1.30 |
-| The full heal | 100% | 1 | 20 | 1.00 |
-| **Total** | | **10** | | **4.10** |
+| Stim | 15% | 2 | 3 | 0.30 |
+| Bandage | 40% | 2 | 8 | 0.80 |
+| Med kit | 65% | 1 | 13 | 0.65 |
+| Lifeline | 100% | 1 | 20 | 1.00 |
+| **Total** | | **6** | | **2.75** |
 
 Three properties of that spread are worth naming, because they are what make the ladder teach
 something rather than just exist.
 
-**The count runs inverse to the strength.** Four of the weakest, one of the strongest. Nobody
-has to be told to save the full heal, and nobody has to be told a stim is spendable. The
+**The count runs inverse to the strength.** Two of the weakest, one of the strongest. Nobody
+has to be told to save the lifeline, and nobody has to be told a stim is spendable. The
 inventory explains its own economy by its shape, before a single description is read, which is
 exactly what an inventory in a tutorial should do.
 
-**The gaps are even, 25 points each, up to the full heal.** No two of the first three are close
+**The gaps are even, 25 points each, up to the lifeline.** No two of the first three are close
 enough to be interchangeable at any health total. A stim is a top-up, a bandage is a recovery,
 a med kit is an emergency. The fourth breaks the pattern by being the only one that finishes
 the job, which is the right way for the rarest item to be different.
 
-**Only the fourth is a full heal.** The other three leave the player short no matter when they
-are used, so topping the bar off costs either two turns or the one item there is no second of.
+**Only the lifeline is a full heal.** The other three leave the player short no matter when
+they are used, so topping the bar off costs either two turns or the one item there is no second
+of.
 
-## The FIGHT streak pays for itself
+## Why lifeline
 
-An interaction worth being aware of, since it falls out of decisions already made rather than
-being designed.
+The other three are objects: a chemical, a dressing, a box of supplies. The fourth is the only
+one the player gets one of and the only one that finishes the job, so it should not read as a
+bigger box. Lifeline names what it does rather than what it is, which is what separates it from
+the ladder underneath it.
+
+It also stays legible in a two column menu at 640x480, where "med kit" and any variation on
+"trauma kit" or "medical kit" would be a glance apart from each other. Transfusion and panacea
+were the other two considered: the first is long and the second belongs to a different register
+than stim and bandage.
+
+## Six items does not fit on one page
+
+Worth being exact about, because the count was chosen partly to avoid paging and it does not.
+
+The battle menu lays selections out in `mainTextManager.columnNumber` columns, which is 2 in
+`TextManager.cs` and 2 on every text object in `Battle.unity`. `UIController.GetInventoryPage`
+computes `itemsPerPage = 2 * columns`, so the ITEM menu shows **four items per page** and puts
+a PAGE marker in the last cell when there are more. Six items is two pages. The engine's hard
+cap, `Inventory.inventorySize`, is 8, so six is legal, just not one screen.
+
+Three ways out, and the choice has not been made:
+
+- **Four items total.** One of each, or two stims and one of the rest, fits a page exactly.
+- **Accept two pages.** Six items with a PAGE marker, which the engine already handles.
+- **Raise `columnNumber` to 3.** That yields six items per page, and also changes ACT to nine
+  per page and reshapes every other selection menu in the game. The text box is 320 pixels
+  wide, so three columns gives each name about a third of a line.
+
+## What the smaller bag did to the FIGHT streak
 
 Using an item costs the turn, and [Illia's](../bosses/illia.md) harder ultimate is triggered by
-spending more than half the turns on FIGHT. Those two compete for the same resource. Against
-her thirteen turns, a player committed enough to trigger the harder ultimate has spent seven or
-more turns attacking, leaving at most five for anything else, so they reach it having used at
-most half their inventory.
+spending more than half the turns on FIGHT, so the two compete for the same resource. At ten
+items that produced a real safety valve: a player committed enough to trigger the harder
+ultimate had at most five spare turns and so reached it with at least five items unused.
 
-The result is self-balancing without anybody balancing it. The harder ultimate is always faced
-with the fuller bag, and the player who healed their way through the fight faces the easier one
-with less left. That is worth protecting if the turn count or the threshold ever moves.
+At six items it barely holds. Five spare turns against six items means the same player can
+arrive with one item left rather than five. The harder ending is still met with a slightly
+fuller bag than the cautious player has, but "slightly" is the whole of it now, and the
+compensation that used to be worth protecting is mostly gone.
+
+That is not automatically wrong. The harder ultimate is a consequence and consequences are
+allowed to cost something. It is only worth knowing that the cushion was removed by a change
+that was about menu paging.
 
 ## Rounding
 
@@ -134,11 +165,15 @@ numbers per boss are deferred to the fights that need them.
 
 ## Open questions
 
-- **What is the fourth item called?** It is the only one without even a placeholder, and it is
-  the one the player will remember, since it is the one they get exactly one of. A
-  [writing](../writing/writing.md) job.
-- **Do the counts hold for every boss, or only the tutorial?** Four, three, two and one is
-  generous: ten uses and four full bars of healing against a thirteen turn fight. That is right
-  for a tutorial and almost certainly wrong for the fights behind it.
-- **Does the inventory refill between attempts?** With an unlimited rewind, a bag that does not
-  refill turns into the real failure state of a fight that has no other one.
+- **Four items on one page, six across two, or a three column menu?** See above. All three are
+  workable and they are different amounts of work.
+- **Do the counts hold for every boss, or only the tutorial?** Six uses and 2.75 bars of healing
+  against a thirteen turn fight is forgiving. That is right for a tutorial and probably wrong
+  for the fights behind it.
+- **The engine already has something called Bandage.** `PlayerCharacter.cs` sets the default
+  armour to `"Bandage"` and the default weapon to `"Stick"`, both inherited from upstream, and
+  nothing in the Soulbound mod overrides either. As it stands the player would be wearing a
+  bandage while carrying two more in the bag. One of the two names has to move.
+- **Are the item names final?** Stim, bandage and med kit were placeholders and lifeline was
+  chosen against them. If any of the first three change, the fourth should be re-checked
+  against whatever replaces them, since its job is to sit outside their pattern.

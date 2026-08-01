@@ -91,8 +91,43 @@ early boss for last is not trivialising it. Both meet the version of the Challen
 is for. The per-fight max HP stops being a records-keeping concession and becomes the plainest
 possible statement of the premise, and free boss selection stops needing an excuse.
 
-Worth stating positively: growth in this game is the player getting better. The numbers are the
-fight describing itself, not a score of how far the Challenger has come.
+Worth stating positively: the Challenger's stat line is the fight describing itself, not a
+score of how far they have come. The growth happens somewhere else.
+
+## Growth is unlocks, not numbers
+
+**The Challenger gets stronger through item and perk unlocks.** Not through a rising stat line.
+
+That is a better fit than a level would have been, and it resolves the tension above properly
+rather than explaining it away. Max HP belongs to the fight, so the fight stays the same
+difficulty every time it is played. The kit belongs to the player, so it carries. Progression
+is real, persistent and visible, and none of it touches the numbers that make records
+comparable.
+
+Perks also become the place every future "what if the player could" goes. The healing item
+counts, for instance, are fixed for every boss **unless a perk changes them**, which is what
+lets the inventory be a designed constant and still be something the player can affect.
+
+Two perks deep this needs its own note. At two facts it does not, so it lives here until there
+is a third.
+
+### It does bring back a problem per-fight max HP was avoiding
+
+If perks are persistent and can be brought into any fight, then a boss fought with a full perk
+loadout and the same boss fought bare are different fights. That is exactly the order
+dependence that setting max HP per fight was chosen to avoid, arriving through a different
+door.
+
+It lands on records. A best time against a boss now depends on which perks the player had when
+they set it, so the number is not comparable with their own earlier run, let alone anyone
+else's. Three ways out, none of them chosen:
+
+- **Accept it.** Most games with builds do. The record measures the player's best, whatever
+  they brought.
+- **Record the loadout with the time**, so a run is comparable with the runs it should be
+  compared with.
+- **Keep perks out of the timed record**, which makes the record clean and makes the perks feel
+  like they do not count.
 
 ## What they carry
 
@@ -154,11 +189,19 @@ the whole idea and it should be the thing that survives if anything else about i
 
 Three consequences, all of which touch decisions already made.
 
-**"The villain at the end" and "a new threat per batch" are different structures.** One is a
-story with an ending. The other is a series of eras, each with its own antagonist, where the
-ending keeps moving. Seasonal games mostly do the second and describe it as the first. Both
-work, they need different writing, and it is much cheaper to know which one this is before the
-first threat is written than after.
+**One villain, and one big fight to close each batch.** Not a new antagonist per batch. The
+villain at the end stays the villain at the end, and every batch finishes on a boss large
+enough to feel like an ending without being the ending.
+
+That is the structure that keeps a live-service game from spending its own premise. A new
+villain each season means the last one stopped mattering, and after two of those the player
+learns that whoever is at the end this time is temporary. Here the destination never moves. The
+capstone fights are stages of getting there, so each batch can land hard without cashing in the
+thing the whole game is pointed at.
+
+It does put weight on the capstone fights. Each one has to be a real event rather than the
+seventh boss of seven, and each one has to leave the villain further away than the player
+hoped, or the pattern becomes a countdown with a known length.
 
 **Completion counting stops being a fixed number.** The tutorial boss counts toward completion,
 which was decided when the roster was a known size. A growing roster turns "four of seven" into
@@ -172,12 +215,14 @@ Those two readings of the same number should be made to agree.
 
 ## Open questions
 
-- **One villain, or one per batch?** See above. It is the difference between a story and a
-  season.
-- **Does the Challenger get stronger between batches?** Per-fight max HP means growth is not
-  carried, which the time travel explains neatly for a fixed roster. A live-service ladder of
-  escalating threats is a stronger pull toward real progression, and the two would then have to
-  be reconciled again.
+- **How do perks interact with the records?** See above. Three options, none picked, and it
+  gets harder to change once times are being recorded.
+- **Where do perks come from?** Clearing bosses, clearing them a particular way, no-hit runs,
+  best times, or something else entirely. Whatever it is becomes what the game is actually
+  asking the player to do.
+- **Can a perk be brought into the tutorial?** Illia is the first fight and the fight the
+  numbers are taught in. A player replaying her with a loadout is playing a different tutorial
+  from the one that was designed.
 - **Does the player ever learn the premise?** Nobody in the game knows it and the Challenger
   does not speak, so there is currently no one who can say any of it out loud. Either it lives
   entirely outside the fiction, in a title screen or a store page, or something in the game has

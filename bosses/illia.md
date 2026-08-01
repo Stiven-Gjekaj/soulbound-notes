@@ -317,10 +317,15 @@ stops being balanced around healing: with an unlimited rewind and only basic ite
 difficulty valve is brush speed and the irritation flag, not how many bandages the player
 brought.
 
-Deaths still count in her record even though they cost nothing. That is the consistent choice,
-and it does mean her death count is not comparable with any other boss's: a careless player
-can rack up a dozen against Illia and none anywhere else, having played worse everywhere else.
-Anything that ever compares death counts across bosses needs to know that.
+Deaths still count in her record even though they cost nothing, and the boss select shows them
+exactly the way it shows everybody else's. There is no asterisk and no separate presentation.
+
+The argument for marking them out was that a cheap death is not the same event as an expensive
+one, so her column would run high and mislead. The argument against is better: dying to the
+boss who revives you is worse than dying to the boss who sends you back to the start. One of
+those fights hands you the turn back and asks you to try the same twenty seconds again. Failing
+that is a plainer statement about the run than failing a fight that costs three minutes to
+re-enter. Her number running high is the number being right.
 
 ## Open questions
 

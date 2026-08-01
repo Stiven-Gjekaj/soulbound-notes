@@ -36,18 +36,20 @@ and the shape are known, the art and the records are not.
 Per boss, once unlocked: attempts, clears, deaths, best time, and whether it has been cleared
 without taking a hit. All of it already exists in the save.
 
-Two of those get complicated by [Illia](../bosses/illia.md), and the screen is where the
-complication surfaces rather than where it is caused:
+**Every boss's numbers are presented the same way.** No asterisks, no per-boss footnotes, and
+no special case for the tutorial.
 
-- **Deaths.** She revives the player without limit and those deaths are still recorded, so her
-  count runs far higher than any other boss's for the same standard of play. A player who reads
-  the column downward will conclude they are worst at the tutorial.
-- **Best time.** Depends on whether her clock keeps running through a death and a revive. If it
-  does, her times are real and simply worse. If it does not, they are not comparable with
-  anything, including her own earlier runs.
+That was decided against the obvious objection. [Illia](../bosses/illia.md) revives the player
+without limit and still records each death, so her count runs higher than anyone's, and the
+reflex is to mark it out as a different kind of number. It is not one. Dying to the boss who
+gives you the turn back is worse than dying to the boss who sends you to the start of the
+fight, because the forgiving fight is the one you had every chance to survive. A high number
+against her is accurate rather than misleading, and a second reading convention for one row
+would cost the screen more than it explains.
 
-Neither is a reason to change how she works. Both are reasons the screen should not present her
-numbers as though they mean the same thing as everybody else's.
+The one thing still hanging is **best time**, which depends on whether her clock keeps running
+through a death and a revive. That is a question about the record rather than about how the
+screen draws it. See [Illia](../bosses/illia.md).
 
 ## Open questions
 

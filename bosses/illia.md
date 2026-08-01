@@ -36,6 +36,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **FIGHT is taught by her and never lands.** She prompts the player to use it and then blocks
   the attack, which is how the verb gets explained. The player may keep attacking. She keeps
   blocking, and she gets irritated, and the irritation makes the final ultimate harder.
+- **Irritation is binary, and it takes a perfect streak.** It triggers only if the player uses
+  FIGHT on every single turn after she teaches it. The turn she asks for does not count, and
+  one turn spent on anything else clears it. There are two ultimates, not a curve.
 - **Dying does not end the run.** Illia brings the player back to life at the turn before the
   one they died on. This is hers, not a game-wide rule, because she is testing rather than
   killing.
@@ -205,17 +208,43 @@ accumulates instead is her irritation, which makes the final ultimate harder. FI
 therefore a real verb with a real consequence, which is exactly what a tutorial needs, and the
 consequence lands at the end rather than immediately.
 
-Two things have to hold or it turns on the player:
+**The FIGHT she asks for does not count.** She instructed it, and a tutorial that punishes the
+player for following its own instruction is worse than one that teaches nothing. The count
+starts on the next turn, the first attack the player chose for themselves.
 
-**The FIGHT she asks for cannot count.** She instructed it, and a tutorial that punishes the
-player for following its own instruction is worse than one that teaches nothing. The counter
-starts on the second attack, the first one the player chose for themselves.
+### Irritation is a streak, not a tally
 
-**The irritation has to be visible.** If she gets angrier and the only place it shows is the
-difficulty of a wave three minutes later, the player experiences an unexplained spike rather
-than a consequence. Whatever the state is, it needs a tell in her dialogue, her expression or
-her painting, and it needs one on every step rather than only at the end. See
-[graphics](../graphics/graphics.md) and [writing](../writing/writing.md).
+It is binary. There are two ultimates, a normal one and a harder one, and no curve between
+them. What selects the harder one is not how many times the player attacked but whether they
+attacked **every turn** after the lesson, without a single exception.
+
+That is a generous rule and a pointed one. Attacking out of curiosity costs nothing, because
+one turn spent on ACT or ITEM or MERCY clears it. The harder ultimate is reserved for a player
+who decided that attacking her was the answer and never revisited it. She is not punishing
+violence, she is answering commitment.
+
+It is also one flag rather than a counter, and the flag only ever moves one way: it starts set
+after the lesson and is cleared the first time a turn goes elsewhere. That has a consequence
+worth being deliberate about. A player who breaks the streak on turn two and then attacks for
+the rest of the fight gets the normal ultimate, and she has no mechanical reason to react to
+those attacks at all. Whether she still comments on them is a [writing](../writing/writing.md)
+question, but she should, or the back half of the fight goes quiet on a player who is still
+swinging.
+
+### It has to be visible
+
+If the only place her state shows is the difficulty of a wave three minutes later, the player
+experiences an unexplained spike rather than a consequence they caused. She needs a tell, in
+her dialogue, her expression or her painting, on each turn the streak is still alive. The tell
+is also what tells the player they can stop. See [graphics](../graphics/graphics.md) and
+[writing](../writing/writing.md).
+
+### It survives death
+
+The streak is not reset by dying. Since she rewinds the player to the turn before, that turn
+gets replayed, and the replay is what counts: if the player attacked on the first attempt and
+used an item on the second, the streak is broken. The state follows the timeline she rewound
+to, not the one she erased.
 
 ## The ultimate
 
@@ -253,12 +282,9 @@ none of them do, which makes her the one fight the player can be careless in. Se
 
 ## Open questions
 
-- **Is irritation binary or scaled?** Either she is annoyed or she is not, and the ultimate has
-  two versions, or every extra attack turns the dial and the ultimate has many. Binary is one
-  flag and one alternative wave. Scaled is a difficulty curve authored by the player without
-  their knowing it, which is more interesting and much harder to balance.
-- **Does irritation survive a death?** If she revives the player, is she still as annoyed as she
-  was, and does dying reset the counter or add to it.
+- **Does she keep reacting to FIGHT after the streak is broken?** Mechanically nothing is
+  happening any more, but a player can still be attacking every turn, and silence would read as
+  the fight having stopped noticing them.
 - **Is the rewind unlimited?** Nothing caps it at the moment, which makes the tutorial
   unloseable. That is defensible for a tutorial and it should be a choice rather than an
   oversight.

@@ -47,9 +47,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
   every other boss's.
 - **The clock keeps running through a death and a revive.** The rewind costs time, not
   progress.
-- **The player carries basic healing only.** Stim, bandage and med kit, healing least to most
-  in that order. They exist so the player learns what ITEM does, not so they can out-heal a
-  wave. The names are placeholders.
+- **The player carries basic healing only.** Stim heals 20, bandage 30, med kit 60. They exist
+  so the player learns what ITEM does, not so they can out-heal a wave. The names are
+  placeholders.
 
 ## What lost
 
@@ -361,14 +361,21 @@ re-enter. Her number running high is the number being right.
 - **Does the clock run through her revive dialogue too?** It runs through the death, which is
   settled. Whether it runs while she is saying something about it is a smaller question with a
   real answer, because on a first run that dialogue cannot be skipped.
+- **What is the player's max HP?** This is the blocking one. The engine's inherited default is
+  20, set in `PlayerCharacter.cs` and derived from `16 + 4 * level` at level 1, and the
+  Soulbound mod does not override it anywhere. Against 20 max HP, a stim healing 20 is a full
+  heal from one HP and the other two are full heals with 10 and 40 thrown away, so all three
+  items are the same item and the ladder never appears in play. Either the numbers come down to
+  something like 5, 8 and 15, or the player's max HP goes up enough for 20, 30 and 60 to be a
+  small, a medium and a large. Both are fine. Neither has been chosen.
 - **What are the three actually called?** Stim, bandage and med kit are placeholders and the
   real names are a [writing](../writing/writing.md) job. Worth doing early, since the tutorial
   is where the player learns the game's vocabulary and placeholder names get into screenshots.
-- **Does the ladder differ by more than amount?** Three items that differ only in how much they
-  heal teach one lesson: bigger is better, always use the biggest. Giving them a second axis,
-  a cheap one that heals instantly against a large one that costs the rest of the turn, is what
-  turns ITEM from a button into a choice. Not required for a tutorial, but it is the cheapest
-  place to add depth.
+- **Does the ladder differ by more than amount?** Three items separated only by size teach one
+  lesson: bigger is better, always use the biggest, and 20 against 30 is close enough that even
+  that lesson is faint. A second axis, a cheap one that heals instantly against a large one
+  that costs the rest of the turn, is what turns ITEM from a button into a choice. Not required
+  for a tutorial, but it is the cheapest place in the game to add depth.
 - **What is in the ultimate, in what order?** Everything, in one wave, is the shape. Which
   forms, how many passes, and how long it runs is the last piece of the fight that is still
   entirely open, and it is the piece the whole thing ends on.

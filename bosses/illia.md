@@ -38,6 +38,8 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **Dying does not end the run.** Illia brings the player back to life at the turn before the
   one they died on. This is hers, not a game-wide rule, because she is testing rather than
   killing.
+- **The player carries basic healing only.** A stem, a med kit, a bandage. They are there so
+  the player learns what ITEM does, not so they can out-heal a wave.
 
 ## What lost
 
@@ -241,9 +243,12 @@ none of them do, which makes her the one fight the player can be careless in. Se
   revives the player twelve times, the select screen either says twelve deaths on a fight
   nobody can lose, or it says none and quietly means something different for her than for
   everyone else.
-- **How much healing does the player carry?** ITEM is taught in phase 1, so items exist. How
-  many the player brings into the ultimate is the difficulty valve for the whole fight, and it
-  is currently unset.
+- **Are the item names final?** Stem, med kit and bandage are what they are called at the
+  moment. Naming is a [writing](../writing/writing.md) job and these read as placeholders.
+- **Do the three heal differently, or are they one item with three names?** Three items that
+  all restore the same amount teach the player nothing about ITEM except which button it is
+  under. Three that differ, a small instant one and a large slow one for instance, teach a
+  choice.
 - **Does phase 3 alternate inside a wave or between waves?** Inside is the recognition test and
   the shorter fight, between is the recap and the longer one. The section above has the maths.
 - **What are the phase 1 brush and splodge?** Phase 2 has all three forms now. Phase 1 has only

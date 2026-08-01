@@ -82,18 +82,15 @@ This README is the hub. Every note is reachable from it and reaches back to it, 
 through another note. A note nothing links to sits alone in the graph and will not be found
 again, which is a slower way of not writing it.
 
-```
-README.md           this page, and the way in
-rules/              how the vault works, in three pages
-general/            the project as a whole
-gameplay/           mechanics, difficulty, pacing
-bosses/             one note per boss
-ui/                 screens, menus, the HUD
-graphics/           art direction, sprites, effects
-writing/            dialogue, names, tone
-sound-design/       music, sound effects, audio tells
-testing/            playtest reports and build impressions
-```
+- [rules](rules/scope.md), how the vault works, in three pages
+- [general](general/general.md), the project as a whole
+- [gameplay](gameplay/gameplay.md), mechanics, difficulty, pacing
+- [bosses](bosses/bosses.md), one note per boss
+- [ui](ui/ui.md), screens, menus, the HUD
+- [graphics](graphics/graphics.md), art direction, sprites, effects
+- [writing](writing/writing.md), dialogue, names, tone
+- [sound-design](sound-design/sound-design.md), music, sound effects, audio tells
+- [testing](testing/testing.md), playtest reports and build impressions
 
 Every note goes in one of the topic folders, and each folder opens with a note of the same name
 saying what it takes and what belongs to a neighbour instead. [Writing notes](rules/notes.md)

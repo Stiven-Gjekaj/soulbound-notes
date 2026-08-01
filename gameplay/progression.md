@@ -4,7 +4,8 @@ What is locked, what unlocks it, and what changes the second time the player fig
 These are rules the whole game obeys, decided while designing
 [Illia](../bosses/illia.md) but not specific to her.
 
-Related: [gameplay](gameplay.md), [ui](../ui/ui.md) for how the boss select shows any of this.
+Related: [gameplay](gameplay.md), [boss select](../ui/boss-select.md) for the screen that shows
+all of this, [ui](../ui/ui.md) for the rest of the screens.
 
 ## Settled
 

@@ -15,5 +15,10 @@ Screens, menus, the HUD, and the information they carry.
 - The words on it, which go in [writing](../writing/writing.md)
 - What the fight does inside the arena, which goes in [gameplay](../gameplay/gameplay.md)
 
+## The notes
+
+- [Boss select](boss-select.md), the screen the game opens on and the only place progression
+  shows
+
 The game's v0.6 milestone rebuilds every screen deliberately unskinned, so this folder is
 where a layout gets settled before anyone draws it. Start from the [README](../README.md).

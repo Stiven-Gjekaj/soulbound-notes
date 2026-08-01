@@ -13,8 +13,15 @@ Related: [gameplay](gameplay.md), [ui](../ui/ui.md) for how the boss select show
   meet none of it.
 - **Once cleared, she stays on the select screen as the tutorial boss** rather than as boss
   number one. Her slot is relabelled, not removed. She stays replayable.
-- **Dialogue is unskippable on the first run and skippable on every run after it.** The writing
-  gets heard once, and after that it never stands between the player and a retry.
+- **Dialogue is unskippable on the first run and skippable on every run after it.** Skipping
+  jumps the whole dialogue block rather than speeding it up. The writing gets heard once, and
+  after that it never stands between the player and a retry.
+- **Death sends the player to their last checkpoint, and each boss sets where that is.** It is
+  a per-boss dial rather than one global rule. [Illia](../bosses/illia.md) sets hers to one
+  turn, the shortest possible, because she is the tutorial.
+- **She counts toward completion.** Being relabelled the tutorial boss changes her label on the
+  select screen and nothing else. If the game says four bosses cleared, she is one of the ones
+  it is counting.
 
 ## Why the lock is the right shape
 
@@ -39,17 +46,26 @@ Three pieces of state, all per save rather than per session:
 The first two are new. Neither is expensive, and deciding them now means the boss select and
 the save format get built once rather than retrofitted at boss four.
 
+## Checkpoints are a per-boss dial
+
+Every boss decides how far back a death sends the player, so "how forgiving is this fight"
+becomes a property of the fight rather than of the game. Illia sets it to one turn and lifts
+the limit on retries, which is what a tutorial should do. Nothing says any other boss is that
+generous, and the sensible default for the rest is the start of the fight until somebody argues
+otherwise.
+
+Worth being deliberate about, because it is the difference between a boss rush that is a series
+of tests and one that is a series of gauntlets, and the answer can differ per boss without the
+game feeling inconsistent. What it cannot do is vary without the player being able to tell. If
+one boss rewinds a turn and the next restarts the fight, the player finds that out by dying,
+and they should find it out some other way first.
+
 ## Open questions
 
-- **What does a locked boss look like on the select screen?** Greyed out with its name showing,
-  a silhouette, a question mark, or absent entirely. Each one tells the player a different
-  amount about how much game is waiting. This is a [ui](../ui/ui.md) decision.
-- **What does skipping actually do?** Jump the whole dialogue block, fast-forward it while a
-  key is held, or step it line by line faster than normal. The first is what a player retrying
-  for the sixth time wants, and the third is what someone who half-remembers it wants.
-- **Does the tutorial boss count toward completion?** If the game ever says "four of seven
-  bosses cleared", relabelling her raises the question of whether she is one of the seven.
-- **What does dying cost anywhere other than the tutorial?** Illia revives the player at the
-  turn before, which is hers and which makes her fight nearly unloseable. Every other boss is
-  currently assumed to be a normal death and a retry from the start, but that is an assumption
-  nobody has made on purpose. See [Illia](../bosses/illia.md).
+- **Where is each boss's checkpoint?** Illia's is decided. The rest are unset, and the default
+  in everyone's head is currently "start of the fight" without that having been chosen.
+- **How does the player know where the checkpoint is before they die?** A per-boss dial the
+  player cannot see is a surprise rather than a rule.
+- **Does the clock keep running through a death?** Records include a best time per boss, and a
+  checkpoint that costs no time makes those times mean something different. See
+  [Illia](../bosses/illia.md), whose unlimited rewind is the extreme case.

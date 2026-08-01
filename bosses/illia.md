@@ -40,8 +40,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
   FIGHT on every single turn after she teaches it. The turn she asks for does not count, and
   one turn spent on anything else clears it. There are two ultimates, not a curve.
 - **Dying does not end the run.** Illia brings the player back to life at the turn before the
-  one they died on. This is hers, not a game-wide rule, because she is testing rather than
-  killing.
+  one they died on, without limit. Her checkpoint is one turn, which is the most generous
+  setting of a rule every boss has. See [progression](../gameplay/progression.md).
+- **Rewound deaths still count** in her record on the boss select.
 - **The player carries basic healing only.** A stem, a med kit, a bandage. They are there so
   the player learns what ITEM does, not so they can out-heal a wave.
 
@@ -268,30 +269,33 @@ punishment.
 
 ## Dying is a rewind
 
-She brings the player back at the turn before the one they died on. It fits her, since she is
-running a test rather than a fight, and it makes the tutorial nearly impossible to fail out of.
+She brings the player back at the turn before the one they died on, as many times as it takes.
+It fits her, since she is running a test rather than a fight, and it makes the tutorial
+effectively impossible to fail out of.
+
+She is not an exception to a rule. Death sends the player to their last checkpoint, and each
+boss sets how far back that is. Illia sets it one turn, which is the shortest possible walk
+back and the reason her fight can afford to be forgiving while the ones behind her are not.
 
 Two consequences worth being deliberate about. The ultimate becomes retryable in place, which
-is what lets it be genuinely hard rather than hard-with-an-asterisk. And the fight stops being
-balanced around healing: with a rewind on death and only basic items, the difficulty valve is
-brush speed and the irritation state, not how many bandages the player brought.
+is what lets it be genuinely demanding rather than demanding-with-an-asterisk. And the fight
+stops being balanced around healing: with an unlimited rewind and only basic items, the
+difficulty valve is brush speed and the irritation flag, not how many bandages the player
+brought.
 
-The rewind is Illia's. Nothing yet says any other boss does this, and the assumption is that
-none of them do, which makes her the one fight the player can be careless in. See
-[progression](../gameplay/progression.md).
+Deaths still count in her record even though they cost nothing. That is the consistent choice,
+and it does mean her death count is not comparable with any other boss's: a careless player
+can rack up a dozen against Illia and none anywhere else, having played worse everywhere else.
+Anything that ever compares death counts across bosses needs to know that.
 
 ## Open questions
 
 - **Does she keep reacting to FIGHT after the streak is broken?** Mechanically nothing is
   happening any more, but a player can still be attacking every turn, and silence would read as
   the fight having stopped noticing them.
-- **Is the rewind unlimited?** Nothing caps it at the moment, which makes the tutorial
-  unloseable. That is defensible for a tutorial and it should be a choice rather than an
-  oversight.
-- **Do rewound deaths count as deaths?** The boss select records deaths per boss. If Illia
-  revives the player twelve times, the select screen either says twelve deaths on a fight
-  nobody can lose, or it says none and quietly means something different for her than for
-  everyone else.
+- **Is her fight timed across a rewind?** Records include a best time per boss. If the clock
+  keeps running through a death and a revive, an unlimited rewind means her best time is still
+  a real number. If it does not, her times are not comparable with anyone's, including her own.
 - **Are the item names final?** Stem, med kit and bandage are what they are called at the
   moment. Naming is a [writing](../writing/writing.md) job and these read as placeholders.
 - **Do the three heal differently, or are they one item with three names?** Three items that

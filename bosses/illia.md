@@ -60,9 +60,14 @@ first run and skippable on every run after. Those are game-wide rules and they l
   paint rather than a test. Rejected: it is not one of her attacks, and it was the most
   expensive item on the list by a distance.
 - **Overlapping telegraphs in phase 3.** Two paintings in progress at once, so that reading one
-  was no longer enough. Rejected in favour of alternating the two forms of each attack, which
-  tests recognition instead of parallel attention, is cheaper to author, and is far less likely
-  to produce a wave that is unfair by accident.
+  was no longer enough. Not rejected so much as moved: phase 3 keeps one idea per wave, and the
+  overlapping happens in the ultimate instead, where it is the climax rather than a difficulty
+  spike three waves from the end.
+- **Alternating forms inside a single phase 3 wave.** It would have made phase 3 a recognition
+  test, where the player has to identify which version is coming before answering it. Rejected
+  in favour of one form per wave, which keeps every wave in the fight a single clean idea. That
+  is the right property for the fight that teaches the game, and it costs phase 3 its sharpest
+  possible version.
 - **FIGHT changing the ending's text.** A proposal for keeping FIGHT meaningful once damage
   stopped deciding the fight: attacking her would have swapped in a different block of end
   dialogue. Superseded by the block and irritation, which is better, because it makes the
@@ -181,39 +186,45 @@ keeps a best time per boss, that variance shows up directly in a record people w
 Three to five is a range that stays unpredictable without any roll being unfair. Bounding it is
 the point, not the specific numbers.
 
-## Phase 3 is a recognition test, and that sets a hard art constraint
+## The ultimate is where everything overlaps
 
-Alternating the two forms turns phase 3 into something the first two phases cannot be: the
-player no longer knows which version is coming. Seeing the telegraph is no longer enough,
-because the telegraph now has to be identified before it can be answered.
+Phase 3 keeps its forms in separate waves. The ultimate does not: it throws all of them into a
+single wave, back to back and on top of each other.
 
-That is a better exam than running two attacks at once, and it comes with a constraint that
-has to hold or the phase is unfair:
+That is what makes it the climax rather than a longer phase 3, and it is the one place in the
+fight where the player has to read two things at once. It also means the ultimate is the only
+wave with a genuinely new demand, while still introducing no new attack, which is the property
+the exam needed.
 
-> The two forms of brush, and the two forms of bucket, must be tellable apart from the first
-> moment of the brushstroke.
+It puts a constraint on the animation that the rest of the fight does not:
 
-If the rising bucket and the thrown bucket look identical for their first second, phase 3 asks
-the player to guess. Both pairs need a distinct opening gesture, and this is a requirement on
-the animation rather than a nice-to-have, so it belongs in the brief before anyone draws her.
-See [graphics](../graphics/graphics.md).
+> When two of her attacks are being painted at the same time, both telegraphs have to stay
+> readable.
 
-Splodge is outside this. It has one form and a count, so there is nothing to identify.
+Two brushstrokes in flight cannot occupy the same visual language, or the player sees one
+smear and guesses. That is a requirement on how she is drawn rather than a nice-to-have, and it
+belongs in the brief before anyone animates her. See [graphics](../graphics/graphics.md).
 
-## Wave count, and what "alternates" decides
+## Wave count
 
-Whether the alternation happens inside a wave or between waves is the difference between two
-quite different fights, and the wave maths settles it either way:
+Phase 3 alternates between waves rather than inside them. One wave per form, six waves, each
+one a single known thing at higher pressure.
 
-- **Between waves.** Phase 3 runs six waves, one per form. Total is 3 + 3 + 6 plus the
-  ultimate, about 13 waves, landing near three and a half minutes. Gentler, and closer to a
-  playlist than an exam.
-- **Within a wave.** Phase 3 runs three waves, one per attack, each switching forms as it
-  goes. Total is 3 + 3 + 3 plus the ultimate, about 10 waves, landing near two and a half
-  minutes. This is the version that actually tests recognition, and it is the shorter fight.
+| Phase | Waves | Roughly |
+| ----- | ----- | ------- |
+| 1 | 3, one per attack | 40 seconds |
+| 2 | 3, one per attack | 40 seconds |
+| 3 | 6, one per form | 80 seconds |
+| Ultimate | 1 | 30 to 60 seconds |
+| **Total** | **13** | **about three and a half minutes** |
 
-Both sit inside the two to four minute budget. The within-a-wave version is the one that makes
-phase 3 an exam rather than a recap.
+That sits in the upper half of the two to four minute budget with the ultimate at its longer
+end, and it leaves room to cut a phase 3 wave if the fight tests long.
+
+The tradeoff is worth naming. Between-waves alternation means phase 3 never asks the player to
+identify which form is coming mid-wave, so it is a pressure test rather than a recognition
+test. What it gains is that every wave in the fight is one clean idea, which is the right
+property for the fight that teaches the game.
 
 ## What FIGHT is for
 
@@ -321,7 +332,11 @@ Anything that ever compares death counts across bosses needs to know that.
   a cheap one that heals instantly against a large one that costs the rest of the turn, is what
   turns ITEM from a button into a choice. Not required for a tutorial, but it is the cheapest
   place to add depth.
-- **Does phase 3 alternate inside a wave or between waves?** Inside is the recognition test and
-  the shorter fight, between is the recap and the longer one. The section above has the maths.
 - **What is the range on the random splodge count?** Random is settled, the bounds are not, and
   splodge is the one attack whose whole difficulty is a single number.
+- **What is in the ultimate, in what order?** Everything, in one wave, is the shape. Which
+  forms, how many passes, and how long it runs is the last piece of the fight that is still
+  entirely open, and it is the piece the whole thing ends on.
+- **What order do the six phase 3 waves come in?** Six waves of one known thing each is a
+  sequence, and the sequence is the difficulty curve. Alternating attack by attack reads
+  differently from grouping both forms of each attack together.

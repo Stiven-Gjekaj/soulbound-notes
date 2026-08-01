@@ -100,12 +100,17 @@ has the whole table in one place.
 
 ## Related
 
-[Soulbound](https://github.com/Stiven-Gjekaj/soulbound) is the game and the engine underneath
-it. Its [README](https://github.com/Stiven-Gjekaj/soulbound#readme) covers what the game is,
-its [changelog](https://github.com/Stiven-Gjekaj/soulbound/blob/main/CHANGELOG.md) covers what
-changed, and its
-[milestones](https://github.com/Stiven-Gjekaj/soulbound/blob/main/docs/project/milestones.md)
-cover what is coming.
+**[Soulbound](https://github.com/Stiven-Gjekaj/soulbound)** is the game and the engine
+underneath it: a boss rush running on a Lua-moddable, Undertale-style battle engine, built in
+Unity. That is where the code, the assets and the issue tracker live.
+
+- Its [README](https://github.com/Stiven-Gjekaj/soulbound#readme) covers what the game is.
+- Its [changelog](https://github.com/Stiven-Gjekaj/soulbound/blob/main/CHANGELOG.md) covers what
+  changed.
+- Its [milestones](https://github.com/Stiven-Gjekaj/soulbound/blob/main/docs/project/milestones.md)
+  cover what is coming.
+- Its [engine documentation](https://github.com/Stiven-Gjekaj/soulbound/blob/main/docs/README.md)
+  covers how to write a boss.
 
 That repository answers what and when. This one answers why.
 

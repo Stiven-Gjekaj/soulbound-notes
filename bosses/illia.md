@@ -49,10 +49,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
   rewind costs time, not progress. This is a property of her checkpoint rather than a rule
   every boss follows.
 - **Her fight sets the player's max HP to 20.**
-- **The player carries the full four item kit**, four stims, three bandages, two med kits and
-  one full heal, at 15, 40, 65 and 100 percent. They exist so the player learns what ITEM does,
-  not so they can out-heal a wave. See
-  [health and healing](../gameplay/health-and-healing.md).
+- **The player carries six items**, two stims, two bandages, a med kit and a lifeline, at 15,
+  40, 65 and 100 percent. They exist so the player learns what ITEM does, not so they can
+  out-heal a wave. See [health and healing](../gameplay/health-and-healing.md).
 
 ## What lost
 
@@ -338,10 +337,14 @@ That is worth keeping. The tutorial is the one fight where the player is working
 numbers mean, and it is the worst possible place to show them a value that has been rounded up
 from something else.
 
-Her kit is generous on purpose. Ten items covering just over four full bars of healing, against
-a fight of thirteen turns and an unlimited rewind, means the player cannot lose to running out
-of anything. Scarcity is not the lesson here. What ITEM is and what spending a turn on it costs
-are the lessons, and both survive abundance.
+Her kit is forgiving on purpose. Six items covering 2.75 bars of healing, against thirteen
+turns and an unlimited rewind, means the player cannot lose to running out of anything.
+Scarcity is not the lesson here. What ITEM is and what spending a turn on it costs are the
+lessons, and both survive being well supplied.
+
+Her checkpoint hands the bag back too. Restoring the turn restores what the player was carrying
+at the start of it, so an item spent on the fatal turn is refunded. Death against her costs
+time and nothing else.
 
 ### The rewind costs time, not progress
 

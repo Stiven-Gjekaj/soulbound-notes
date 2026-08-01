@@ -20,6 +20,9 @@ all of this, [ui](../ui/ui.md) for the rest of the screens.
 - **Death sends the player to their last checkpoint, and each boss sets where that is and
   whether the clock keeps running.** Both are per-boss dials rather than global rules.
   [Illia](../bosses/illia.md) sets one turn, unlimited retries, and a clock that never stops.
+- **A checkpoint restores state and not just position.** Health, inventory and turn all go back
+  to what they were when it was reached. See
+  [health and healing](health-and-healing.md).
 - **She counts toward completion.** Being relabelled the tutorial boss changes her label on the
   select screen and nothing else. If the game says four bosses cleared, she is one of the ones
   it is counting.

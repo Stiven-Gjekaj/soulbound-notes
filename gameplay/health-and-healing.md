@@ -13,6 +13,8 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 - **The player carries two, two, one and one of them**, weakest to strongest. Six items.
 - **Fractions round up** to the nearest whole HP.
 - **An item heals on the turn it is used**, before the wave rather than after it.
+- **The inventory is restored by the checkpoint**, to whatever it held when the checkpoint was
+  reached. A checkpoint at the start of a battle therefore refills it.
 - **The player is shown the percentage** when they use an item, not the HP figure.
 - **Max HP ramps up across the roster**, alongside difficulty.
 - **Each boss sets the player's max HP for its own fight.** The player does not carry a growing
@@ -123,6 +125,25 @@ one that punishes its absence, and for the fight that teaches the menu it should
 
 The cost is the turn. Using an item is a turn not spent on anything else, which is the whole
 price and is enough of one.
+
+## The inventory is part of the checkpoint
+
+Dying restores the bag to what it held at the checkpoint. If the checkpoint is the start of the
+battle the player gets everything back, and if it is somewhere later they get back exactly what
+they were carrying when they reached it.
+
+Those are the same rule rather than two, which is the useful part. The checkpoint restores
+state, not position: health, inventory, turn, and anything else the fight was tracking. "Refill
+at the start of a battle" is that rule applied to a checkpoint that happens to sit at turn
+zero. Nothing special-cases the tutorial.
+
+It also means an item spent on the turn the player died is refunded, since the checkpoint
+predates it. Combined with a running clock, death against
+[Illia](../bosses/illia.md) costs exactly one thing and it is time. Not progress, not
+resources, not the turn's item. That is a clean, single-currency failure and it is worth
+keeping single.
+
+See [progression](progression.md) for where each boss's checkpoint sits.
 
 ## The player sees the percentage
 

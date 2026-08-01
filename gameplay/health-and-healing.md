@@ -9,7 +9,9 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 ## Settled
 
 - **Healing items restore a percentage of max HP**, not a flat amount.
-- **The three basic items heal 15, 40 and 65 percent**, being stim, bandage and med kit.
+- **Four healing items**, at 15, 40, 65 and 100 percent. The first three are stim, bandage and
+  med kit. The fourth has no name yet.
+- **The player carries four, three, two and one of them**, weakest to strongest.
 - **Fractions round up** to the nearest whole HP.
 - **An item heals on the turn it is used**, before the wave rather than after it.
 - **The player is shown the percentage** when they use an item, not the HP figure.
@@ -28,26 +30,46 @@ A percentage never has that problem. A stim is worth the same fraction of the ba
 fight and the last one, so the items stay relevant without ever becoming mandatory, and nobody
 has to retune the inventory every time a boss changes the numbers.
 
-## The three items
+## The four items
 
-| Item | Heals | At 20 max HP | At 60 max HP | At 100 max HP |
-| ---- | ----- | ------------ | ------------ | ------------- |
-| Stim | 15% | 3 | 9 | 15 |
-| Bandage | 40% | 8 | 24 | 40 |
-| Med kit | 65% | 13 | 39 | 65 |
+| Item | Heals | Carried | At 20 max HP | Whole bars carried |
+| ---- | ----- | ------- | ------------ | ------------------ |
+| Stim | 15% | 4 | 3 | 0.60 |
+| Bandage | 40% | 3 | 8 | 1.20 |
+| Med kit | 65% | 2 | 13 | 1.30 |
+| The full heal | 100% | 1 | 20 | 1.00 |
+| **Total** | | **10** | | **4.10** |
 
-Two properties of that spread are worth naming, because they are what make the ladder teach
+Three properties of that spread are worth naming, because they are what make the ladder teach
 something rather than just exist.
 
-**The gaps are even, 25 points each.** The three are equally far apart, so no two of them are
-close enough to be interchangeable at any health total. A stim is a top-up, a bandage is a
-recovery, a med kit is an emergency, and the player can tell which is which without reading a
-number.
+**The count runs inverse to the strength.** Four of the weakest, one of the strongest. Nobody
+has to be told to save the full heal, and nobody has to be told a stim is spendable. The
+inventory explains its own economy by its shape, before a single description is read, which is
+exactly what an inventory in a tutorial should do.
 
-**None of them is a full heal.** The largest is 65%, so no single item ever restores the bar
-from empty. There is no "and now I am fine" button, only degrees of less bad, and a player who
-wants to be topped up spends two turns on it. That does more to teach what ITEM costs than any
-description would.
+**The gaps are even, 25 points each, up to the full heal.** No two of the first three are close
+enough to be interchangeable at any health total. A stim is a top-up, a bandage is a recovery,
+a med kit is an emergency. The fourth breaks the pattern by being the only one that finishes
+the job, which is the right way for the rarest item to be different.
+
+**Only the fourth is a full heal.** The other three leave the player short no matter when they
+are used, so topping the bar off costs either two turns or the one item there is no second of.
+
+## The FIGHT streak pays for itself
+
+An interaction worth being aware of, since it falls out of decisions already made rather than
+being designed.
+
+Using an item costs the turn, and [Illia's](../bosses/illia.md) harder ultimate is triggered by
+spending more than half the turns on FIGHT. Those two compete for the same resource. Against
+her thirteen turns, a player committed enough to trigger the harder ultimate has spent seven or
+more turns attacking, leaving at most five for anything else, so they reach it having used at
+most half their inventory.
+
+The result is self-balancing without anybody balancing it. The harder ultimate is always faced
+with the fuller bag, and the player who healed their way through the fight faces the easier one
+with less left. That is worth protecting if the turn count or the threshold ever moves.
 
 ## Rounding
 
@@ -112,10 +134,11 @@ numbers per boss are deferred to the fights that need them.
 
 ## Open questions
 
-- **How many of each does the player carry?** The counts are unset. Against
-  [Illia](../bosses/illia.md) it barely matters, since the rewind is unlimited and healing is
-  not what decides her fight, but it is where the player learns that items run out, so the
-  number is teaching something whether it was chosen or not.
-- **What does Illia's fight set max HP to?** Every fight sets its own, and hers is the one the
-  player meets first, so it is the total every percentage in the game gets read against on the
-  first encounter.
+- **What is the fourth item called?** It is the only one without even a placeholder, and it is
+  the one the player will remember, since it is the one they get exactly one of. A
+  [writing](../writing/writing.md) job.
+- **Do the counts hold for every boss, or only the tutorial?** Four, three, two and one is
+  generous: ten uses and four full bars of healing against a thirteen turn fight. That is right
+  for a tutorial and almost certainly wrong for the fights behind it.
+- **Does the inventory refill between attempts?** With an unlimited rewind, a bag that does not
+  refill turns into the real failure state of a fight that has no other one.

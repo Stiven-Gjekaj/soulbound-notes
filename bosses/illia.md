@@ -43,7 +43,10 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **Dying does not end the run.** Illia brings the player back to life at the turn before the
   one they died on, without limit. Her checkpoint is one turn, which is the most generous
   setting of a rule every boss has. See [progression](../gameplay/progression.md).
-- **Rewound deaths still count** in her record on the boss select.
+- **Rewound deaths still count** in her record on the boss select, presented the same way as
+  every other boss's.
+- **The clock keeps running through a death and a revive.** The rewind costs time, not
+  progress.
 - **The player carries basic healing only.** Stim, bandage and med kit, healing least to most
   in that order. They exist so the player learns what ITEM does, not so they can out-heal a
   wave. The names are placeholders.
@@ -322,6 +325,22 @@ stops being balanced around healing: with an unlimited rewind and only basic ite
 difficulty valve is brush speed and the irritation flag, not how many bandages the player
 brought.
 
+### The rewind costs time, not progress
+
+The clock does not stop for a death. It runs through dying, through her reviving the player,
+and into the replayed turn, so a death is free in progress and expensive in the only currency
+the records keep.
+
+That is what stops the tutorial being a fight with no skill ceiling. It cannot be lost, so
+clearing it says nothing, but clearing it quickly says everything, and the gap between a player
+who dodged the ultimate and one who was revived through it four times is visible on the boss
+select without either of them having failed. An unloseable fight with a real best time is a
+better first boss than a loseable one, because it puts the pressure on the player who wants it
+and takes it off the player who does not.
+
+It also means her best time is a real number rather than a special case, comparable with her
+own earlier runs and sitting in the same column as everyone else's on the same terms.
+
 Deaths still count in her record even though they cost nothing, and the boss select shows them
 exactly the way it shows everybody else's. There is no asterisk and no separate presentation.
 
@@ -339,9 +358,9 @@ re-enter. Her number running high is the number being right.
   bank. A repeated final line, a silence that is deliberately a silence, or something that only
   exists past the threshold. Whichever it is, it is the first thing the player hears after the
   fight has already been decided.
-- **Is her fight timed across a rewind?** Records include a best time per boss. If the clock
-  keeps running through a death and a revive, an unlimited rewind means her best time is still
-  a real number. If it does not, her times are not comparable with anyone's, including her own.
+- **Does the clock run through her revive dialogue too?** It runs through the death, which is
+  settled. Whether it runs while she is saying something about it is a smaller question with a
+  real answer, because on a first run that dialogue cannot be skipped.
 - **What are the three actually called?** Stim, bandage and med kit are placeholders and the
   real names are a [writing](../writing/writing.md) job. Worth doing early, since the tutorial
   is where the player learns the game's vocabulary and placeholder names get into screenshots.

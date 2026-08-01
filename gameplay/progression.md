@@ -67,6 +67,7 @@ and they should find it out some other way first.
   in everyone's head is currently "start of the fight" without that having been chosen.
 - **How does the player know where the checkpoint is before they die?** A per-boss dial the
   player cannot see is a surprise rather than a rule.
-- **Does the clock keep running through a death?** Records include a best time per boss, and a
-  checkpoint that costs no time makes those times mean something different. See
-  [Illia](../bosses/illia.md), whose unlimited rewind is the extreme case.
+- **Does the clock keep running through a death everywhere, or only against Illia?** Hers does,
+  which is what gives her otherwise unloseable fight a skill ceiling. Whether that is a
+  game-wide rule or a property of her checkpoint has not been said. See
+  [Illia](../bosses/illia.md).

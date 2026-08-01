@@ -47,9 +47,10 @@ fight, because the forgiving fight is the one you had every chance to survive. A
 against her is accurate rather than misleading, and a second reading convention for one row
 would cost the screen more than it explains.
 
-The one thing still hanging is **best time**, which depends on whether her clock keeps running
-through a death and a revive. That is a question about the record rather than about how the
-screen draws it. See [Illia](../bosses/illia.md).
+Best time works the same way for the same reason. Her clock keeps running through a death and a
+revive, so her times are real numbers on the same terms as everyone else's, and the column
+means one thing all the way down. It is also the only place her fight has a skill ceiling,
+since she cannot be lost to. See [Illia](../bosses/illia.md).
 
 ## Open questions
 

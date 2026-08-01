@@ -32,6 +32,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **She ends the fight herself**, once the player survives her final ultimate attack. The
   ultimate is a long string of attacks run back to back. Her HP reaching zero is not the
   ending.
+- **FIGHT is taught by her and never lands.** She prompts the player to use it and then blocks
+  the attack, which is how the verb gets explained. The player may keep attacking. She keeps
+  blocking, and she gets irritated, and the irritation makes the final ultimate harder.
 
 ## What lost
 
@@ -49,6 +52,10 @@ first run and skippable on every run after. Those are game-wide rules and they l
   was no longer enough. Rejected in favour of alternating the two forms of each attack, which
   tests recognition instead of parallel attention, is cheaper to author, and is far less likely
   to produce a wave that is unfair by accident.
+- **FIGHT changing the ending's text.** A proposal for keeping FIGHT meaningful once damage
+  stopped deciding the fight: attacking her would have swapped in a different block of end
+  dialogue. Superseded by the block and irritation, which is better, because it makes the
+  choice cost something the player feels rather than something they read about afterwards.
 
 ## The three attacks are three reading skills
 
@@ -159,6 +166,29 @@ quite different fights, and the wave maths settles it either way:
 Both sit inside the two to four minute budget. The within-a-wave version is the one that makes
 phase 3 an exam rather than a recap.
 
+## What FIGHT is for
+
+She asks for it. Somewhere in phase 1 she tells the player to attack her, they do, and she
+blocks it. That is the lesson: this is the button, this is what pressing it looks like, and
+this is what happens when you press it on me.
+
+The player can keep attacking after that. She keeps blocking, she never takes damage, and what
+accumulates instead is her irritation, which makes the final ultimate harder. FIGHT is
+therefore a real verb with a real consequence, which is exactly what a tutorial needs, and the
+consequence lands at the end rather than immediately.
+
+Two things have to hold or it turns on the player:
+
+**The FIGHT she asks for cannot count.** She instructed it, and a tutorial that punishes the
+player for following its own instruction is worse than one that teaches nothing. The counter
+starts on the second attack, the first one the player chose for themselves.
+
+**The irritation has to be visible.** If she gets angrier and the only place it shows is the
+difficulty of a wave three minutes later, the player experiences an unexplained spike rather
+than a consequence. Whatever the state is, it needs a tell in her dialogue, her expression or
+her painting, and it needs one on every step rather than only at the end. See
+[graphics](../graphics/graphics.md) and [writing](../writing/writing.md).
+
 ## The ultimate
 
 The fight ends when the player survives it, so it is the only wave in the game so far whose
@@ -179,11 +209,12 @@ decision, not a detail. See [progression](../gameplay/progression.md).
 
 ## Open questions
 
-- **What is FIGHT for?** It is taught in phase 1, so it works, but damage no longer ends the
-  fight. A tutorial that teaches a button and then reveals the button never mattered has
-  taught the player something false. The cheapest honest fix is that FIGHT does not shorten
-  the fight but does change how it ends, which keeps the verb real and costs one flag and one
-  alternative block of end text. That is a proposal, not a decision.
+- **Is irritation binary or scaled?** Either she is annoyed or she is not, and the ultimate has
+  two versions, or every extra attack turns the dial and the ultimate has many. Binary is one
+  flag and one alternative wave. Scaled is a difficulty curve authored by the player without
+  their knowing it, which is more interesting and much harder to balance.
+- **Does irritation survive a death?** If she revives the player, is she still as annoyed as she
+  was, and does dying reset the counter or add to it.
 - **What does dying in the ultimate cost?** Retrying from the start of the fight is the boss
   rush default and it is a three minute walk back. Worth deciding deliberately rather than
   inheriting.

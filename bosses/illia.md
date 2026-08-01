@@ -22,8 +22,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **Phase 2** repeats the same three attacks in a different manner. Worked example: phase 1's
   bucket fills the arena from the bottom and the player climbs above the rising paint, phase
   2's bucket is thrown into the arena and the player dodges the droplets it throws off.
-- **Phase 3** is a full mini boss fight, an exam on whether the player got the gist. Each
-  attack incorporates both of its earlier forms and alternates between them.
+- **Phase 3** is a full mini boss fight, an exam on whether the player got the gist. Brush and
+  bucket incorporate both of their earlier forms and alternate between them. Splodge escalates
+  instead, to three marks and more.
 - **She is in full colour.** Not desaturated.
 - **She can change the arena, but nothing persists between waves.** A canvas that fills up is
   a canvas nobody can fight in.
@@ -125,20 +126,39 @@ three attacks is exactly 9. So:
 Four minutes does not mean longer waves. A 24 second wave is exhausting rather than hard. It
 means more waves, and they belong in phase 3.
 
-## The six forms
+## The attack grid
 
-Two forms of each attack, one per phase, and phase 3 draws from both.
+| Attack | Phase 1 | Phase 2 | Phase 3 |
+| ------ | ------- | ------- | ------- |
+| Brush | A single swipe across one part of the arena, left or right | Strikes down in sections across the arena, one after another, in the manner of Asgore's trident | Alternates the two |
+| Bucket | Fills the arena from the bottom, the player climbs above the rising paint | Thrown into the arena, the player dodges the droplets it throws off | Alternates the two |
+| Splodge | One mark | Two marks | Three marks, and more |
 
-| Attack | Phase 1 | Phase 2 |
-| ------ | ------- | ------- |
-| Brush | To be worked out | Strikes down in sections across the arena, one after another, in the manner of Asgore's trident |
-| Bucket | Fills the arena from the bottom, the player climbs above the rising paint | Thrown into the arena, the player dodges the droplets it throws off |
-| Splodge | To be worked out | Faster, and two or three at once instead of one |
+Every form escalates along its own attack's axis rather than borrowing another's. The sectioned
+brush is still a direction read, just several of them in sequence. Two marks is still a radius
+read, just twice. Nothing has drifted into being a different attack, which is what keeps the
+vocabulary at three.
 
-The phase 2 forms all escalate along their own axis rather than borrowing another attack's.
-The sectioned brush is still a direction read, just a sequence of them. Two or three splodges
-is still a radius read, just several at once. Neither has drifted into being a different
-attack, which is what keeps the vocabulary of three intact.
+## Splodge is a dial, and the other two are switches
+
+Worth naming, because it changes what phase 3 is doing.
+
+Brush and bucket each have two genuinely different forms. A swipe and a sectioned strike are
+not the same attack at different volumes, and neither are a rising fill and a thrown bucket.
+Phase 3 can alternate them because there is something to alternate.
+
+Splodge does not work that way. One mark, two marks, three marks and more is a single form with
+a number attached. There is nothing to alternate, so its phase 3 is a straight escalation.
+
+That is a feature rather than a gap. It gives the three attacks three different escalation
+shapes: two that transform and one that simply intensifies. It also means the recognition test
+in phase 3 is carried by brush and bucket, while splodge is the attack that applies pressure
+underneath it. Splodge is exempt from the opening-gesture constraint below, because there is
+no wrong answer to guess at: more marks is more marks.
+
+One thing left hanging by "three marks, and more": whether the count climbs during phase 3, so
+that the last splodge wave is denser than the first, or whether it sits at a fixed number
+above three. The ultimate presumably has the most of all.
 
 ## Phase 3 is a recognition test, and that sets a hard art constraint
 
@@ -149,12 +169,15 @@ because the telegraph now has to be identified before it can be answered.
 That is a better exam than running two attacks at once, and it comes with a constraint that
 has to hold or the phase is unfair:
 
-> The two forms of each attack must be tellable apart from the first moment of the brushstroke.
+> The two forms of brush, and the two forms of bucket, must be tellable apart from the first
+> moment of the brushstroke.
 
 If the rising bucket and the thrown bucket look identical for their first second, phase 3 asks
-the player to guess. Every pair needs a distinct opening gesture, and this is a requirement on
+the player to guess. Both pairs need a distinct opening gesture, and this is a requirement on
 the animation rather than a nice-to-have, so it belongs in the brief before anyone draws her.
 See [graphics](../graphics/graphics.md).
+
+Splodge is outside this. It has one form and a count, so there is nothing to identify.
 
 ## Wave count, and what "alternates" decides
 
@@ -251,10 +274,13 @@ none of them do, which makes her the one fight the player can be careless in. Se
   choice.
 - **Does phase 3 alternate inside a wave or between waves?** Inside is the recognition test and
   the shorter fight, between is the recap and the longer one. The section above has the maths.
-- **What are the phase 1 brush and splodge?** Phase 2 has all three forms now. Phase 1 has only
-  the bucket, and phase 1 is the one carrying the tutorial, so its three are the ones that have
-  to be simplest.
-- **What separates the bucket from the splodge in practice?** Phase 2's thrown bucket throws
-  off droplets, and phase 2's splodge is two or three splatters at once. Those are close
-  enough that they could read as the same attack. The split on paper is volume against impact,
-  and it needs to survive contact with the actual waves.
+- **Does the splodge count climb inside phase 3, or sit fixed above three?** "Three marks, and
+  more" leaves it open. Climbing gives the phase its own curve, fixed makes it easier to tune
+  against the ultimate.
+- **What separates the thrown bucket from a splodge?** The phase 2 bucket is thrown and throws
+  off droplets, which is impact spreading from a point, which is the splodge's own job. This is
+  the one pair in the grid that could collapse into a single attack in practice, and it needs
+  watching once both exist.
+- **Does the phase 1 brush swipe always come from the same edge?** Left or right is settled.
+  Whether it enters from the side it lands on, or is drawn across from the opposite one, is the
+  difference between a direction read and a pure position read.

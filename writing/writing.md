@@ -11,8 +11,8 @@ Dialogue, names, flavour text, and the voice the game speaks in.
 
 **Not here**
 
-- How the text box behaves, which goes in [ui](../ui/README.md)
-- What the boss does while it is talking, which goes in [bosses](../bosses/README.md)
+- How the text box behaves, which goes in [ui](../ui/ui.md)
+- What the boss does while it is talking, which goes in [bosses](../bosses/bosses.md)
 
 Write the line first and worry about the engine's text markup second. Read
 [the rules](../rules/scope.md), and start from the [README](../README.md).

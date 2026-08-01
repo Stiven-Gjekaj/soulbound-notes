@@ -11,9 +11,9 @@ Mechanics, difficulty and pacing: what the player is asked to do, and how hard i
 
 **Not here**
 
-- One boss's attacks, which go in [bosses](../bosses/README.md)
-- Where things sit on screen, which goes in [ui](../ui/README.md)
-- What a build actually felt like to play, which goes in [testing](../testing/README.md)
+- One boss's attacks, which go in [bosses](../bosses/bosses.md)
+- Where things sit on screen, which goes in [ui](../ui/ui.md)
+- What a build actually felt like to play, which goes in [testing](../testing/testing.md)
 
 Read [the rules](../rules/scope.md) before writing, and start from the
 [README](../README.md).

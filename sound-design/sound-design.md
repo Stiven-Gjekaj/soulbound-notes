@@ -11,9 +11,9 @@ Music, sound effects, and what the player hears coming.
 
 **Not here**
 
-- Whether an attack is fair to dodge, which goes in [gameplay](../gameplay/README.md)
-- What the boss says out loud, which goes in [writing](../writing/README.md)
+- Whether an attack is fair to dodge, which goes in [gameplay](../gameplay/gameplay.md)
+- What the boss says out loud, which goes in [writing](../writing/writing.md)
 
 An audio tell is a mechanic wearing a sound. If a note is really about the warning rather than
-the noise, it belongs in [gameplay](../gameplay/README.md) with a link back here. Start from
+the noise, it belongs in [gameplay](../gameplay/gameplay.md) with a link back here. Start from
 the [README](../README.md).

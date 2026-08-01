@@ -67,19 +67,19 @@ note hangs off that.
 
 ## Folders
 
-Every note lives in a topic folder. There are eight, and each one has a README saying exactly
-what it takes and what it does not:
+Every note lives in a topic folder. There are eight, and each one opens with a note of the same
+name saying exactly what it takes and what it does not:
 
 | Folder | Takes |
 | ------ | ----- |
-| [general](../general/README.md) | The project as a whole, and anything with no better home |
-| [gameplay](../gameplay/README.md) | Mechanics, difficulty, pacing |
-| [bosses](../bosses/README.md) | One note per boss: attacks, phases, the shape of the fight |
-| [ui](../ui/README.md) | Screens, menus, the HUD, and the information they carry |
-| [graphics](../graphics/README.md) | Art direction, sprites, effects |
-| [writing](../writing/README.md) | Dialogue, names, flavour text, tone |
-| [sound-design](../sound-design/README.md) | Music, sound effects, audio tells |
-| [testing](../testing/README.md) | Playtest reports and impressions of a build |
+| [general](../general/general.md) | The project as a whole, and anything with no better home |
+| [gameplay](../gameplay/gameplay.md) | Mechanics, difficulty, pacing |
+| [bosses](../bosses/bosses.md) | One note per boss: attacks, phases, the shape of the fight |
+| [ui](../ui/ui.md) | Screens, menus, the HUD, and the information they carry |
+| [graphics](../graphics/graphics.md) | Art direction, sprites, effects |
+| [writing](../writing/writing.md) | Dialogue, names, flavour text, tone |
+| [sound-design](../sound-design/sound-design.md) | Music, sound effects, audio tells |
+| [testing](../testing/testing.md) | Playtest reports and impressions of a build |
 
 Pick the folder by what the note is mostly about, then link to the others instead of
 duplicating them. A note about how a boss's second phase sounds is a `bosses` note linking to

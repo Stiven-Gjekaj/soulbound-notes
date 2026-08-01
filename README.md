@@ -108,9 +108,9 @@ sound-design/       music, sound effects, audio tells
 testing/            playtest reports and build impressions
 ```
 
-Every note goes in one of the topic folders, and each folder's README says what it takes and
-what belongs to a neighbour instead. [Writing notes](rules/notes.md) has the whole table in
-one place.
+Every note goes in one of the topic folders, and each folder opens with a note of the same name
+saying what it takes and what belongs to a neighbour instead. [Writing notes](rules/notes.md)
+has the whole table in one place.
 
 ---
 

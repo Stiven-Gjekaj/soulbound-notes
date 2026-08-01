@@ -11,8 +11,8 @@ Art direction, and everything the player sees once it has been drawn.
 
 **Not here**
 
-- Where a thing sits on screen, which goes in [ui](../ui/README.md)
-- What an attack does to the player, which goes in [bosses](../bosses/README.md)
+- Where a thing sits on screen, which goes in [ui](../ui/ui.md)
+- What an attack does to the player, which goes in [bosses](../bosses/bosses.md)
 - Finished assets, which ship from the game repository. [Scope](../rules/scope.md) explains.
 
 Reference images and screenshots go in `attachments/`, named after what they show rather than

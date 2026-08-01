@@ -49,6 +49,7 @@ the save format get built once rather than retrofitted at boss four.
   for the sixth time wants, and the third is what someone who half-remembers it wants.
 - **Does the tutorial boss count toward completion?** If the game ever says "four of seven
   bosses cleared", relabelling her raises the question of whether she is one of the seven.
-- **What does dying cost?** Retrying from the start of the fight is the default and nothing has
-  challenged it yet, but Illia's ultimate makes the last twenty seconds of a three minute fight
-  the most likely place to die. See [Illia](../bosses/illia.md).
+- **What does dying cost anywhere other than the tutorial?** Illia revives the player at the
+  turn before, which is hers and which makes her fight nearly unloseable. Every other boss is
+  currently assumed to be a normal death and a retry from the start, but that is an assumption
+  nobody has made on purpose. See [Illia](../bosses/illia.md).

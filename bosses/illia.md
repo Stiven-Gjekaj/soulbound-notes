@@ -35,6 +35,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **FIGHT is taught by her and never lands.** She prompts the player to use it and then blocks
   the attack, which is how the verb gets explained. The player may keep attacking. She keeps
   blocking, and she gets irritated, and the irritation makes the final ultimate harder.
+- **Dying does not end the run.** Illia brings the player back to life at the turn before the
+  one they died on. This is hers, not a game-wide rule, because she is testing rather than
+  killing.
 
 ## What lost
 
@@ -203,9 +206,25 @@ the run where it decides the fight. Whatever it does, it is built from the three
 player has spent two phases learning, and it introduces nothing new. The novelty is the length
 and the density, not the vocabulary.
 
-And it is where the retry cost lands. Dying to the last twenty seconds of a three minute fight
-is the most expensive failure the game can hand out, so what the retry costs is a real
-decision, not a detail. See [progression](../gameplay/progression.md).
+And the thing that would normally make it cruel is already solved. A long final wave is usually
+the most expensive failure a fight can hand out, because dying at the end means replaying all
+of it. Here she revives the player at the turn before, so the ultimate can be attempted again
+immediately. It can be as demanding as it needs to be without the walk back being the real
+punishment.
+
+## Dying is a rewind
+
+She brings the player back at the turn before the one they died on. It fits her, since she is
+running a test rather than a fight, and it makes the tutorial nearly impossible to fail out of.
+
+Two consequences worth being deliberate about. The ultimate becomes retryable in place, which
+is what lets it be genuinely hard rather than hard-with-an-asterisk. And the fight stops being
+balanced around healing: with a rewind on death and only basic items, the difficulty valve is
+brush speed and the irritation state, not how many bandages the player brought.
+
+The rewind is Illia's. Nothing yet says any other boss does this, and the assumption is that
+none of them do, which makes her the one fight the player can be careless in. See
+[progression](../gameplay/progression.md).
 
 ## Open questions
 
@@ -215,9 +234,13 @@ decision, not a detail. See [progression](../gameplay/progression.md).
   their knowing it, which is more interesting and much harder to balance.
 - **Does irritation survive a death?** If she revives the player, is she still as annoyed as she
   was, and does dying reset the counter or add to it.
-- **What does dying in the ultimate cost?** Retrying from the start of the fight is the boss
-  rush default and it is a three minute walk back. Worth deciding deliberately rather than
-  inheriting.
+- **Is the rewind unlimited?** Nothing caps it at the moment, which makes the tutorial
+  unloseable. That is defensible for a tutorial and it should be a choice rather than an
+  oversight.
+- **Do rewound deaths count as deaths?** The boss select records deaths per boss. If Illia
+  revives the player twelve times, the select screen either says twelve deaths on a fight
+  nobody can lose, or it says none and quietly means something different for her than for
+  everyone else.
 - **How much healing does the player carry?** ITEM is taught in phase 1, so items exist. How
   many the player brings into the ultimate is the difficulty valve for the whole fight, and it
   is currently unset.

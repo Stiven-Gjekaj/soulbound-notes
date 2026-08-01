@@ -149,7 +149,7 @@ means more waves, and they belong in phase 3.
 | ------ | ------- | ------- | ------- |
 | Brush | A single swipe covering one side of the arena, left or right | Strikes down in sections across the arena, one after another, in the manner of Asgore's trident | Alternates the two |
 | Bucket | Fills the arena from the bottom, the player climbs above the rising paint | Thrown in, arriving as a shower of small projectiles | Alternates the two |
-| Splodge | One marked area | Two marked areas | Three, and more, at a random count |
+| Splodge | One marked area | Two marked areas | Three or four, chosen at random |
 
 The brush points at itself. She swipes right from the player's view and the right side of the
 arena is what gets covered, so the gesture and the danger are the same direction. That is the
@@ -169,9 +169,9 @@ Brush and bucket each have two genuinely different forms. A swipe and a sectione
 not the same attack at different volumes, and neither are a rising fill and a thrown bucket.
 Phase 3 can alternate them because there is something to alternate.
 
-Splodge does not work that way. One area, two areas, three and more is a single form with a
-number attached. There is nothing to alternate, so its phase 3 is a straight escalation, and in
-phase 3 the count is random rather than fixed.
+Splodge does not work that way. One area, two areas, three or four is a single form with a
+number attached. There is nothing to alternate, so its phase 3 is a straight escalation, and
+from phase 3 onward the count is rolled rather than fixed.
 
 That is a feature rather than a gap. It gives the three attacks three different escalation
 shapes: two that transform and one that simply intensifies. It also means the recognition test
@@ -179,12 +179,11 @@ in phase 3 is carried by brush and bucket, while splodge is the attack that appl
 underneath it. Splodge is exempt from the opening-gesture constraint below, because there is no
 wrong answer to guess at: more marked floor is more marked floor.
 
-The random count needs a floor and a ceiling. Splodge is the one attack whose difficulty is a
-single number, so an unbounded roll is the one place in the fight where a run can be
-meaningfully harder than another run for no reason the player caused. Since the boss select
-keeps a best time per boss, that variance shows up directly in a record people will compare.
-Three to five is a range that stays unpredictable without any roll being unfair. Bounding it is
-the point, not the specific numbers.
+The roll is **three or four**, in phase 3 and in the ultimate alike. A two-value range is about
+as tight as random can be while still being random, which is the right amount here: splodge is
+the one attack whose entire difficulty is a single number, and the boss select keeps a best
+time per boss, so any variance lands directly in a record people compare. Three against four
+changes how much floor is left without any roll being one the player can blame a loss on.
 
 ## The ultimate is where everything overlaps
 
@@ -343,8 +342,6 @@ Anything that ever compares death counts across bosses needs to know that.
   a cheap one that heals instantly against a large one that costs the rest of the turn, is what
   turns ITEM from a button into a choice. Not required for a tutorial, but it is the cheapest
   place to add depth.
-- **What is the range on the random splodge count?** Random is settled, the bounds are not, and
-  splodge is the one attack whose whole difficulty is a single number.
 - **What is in the ultimate, in what order?** Everything, in one wave, is the shape. Which
   forms, how many passes, and how long it runs is the last piece of the fight that is still
   entirely open, and it is the piece the whole thing ends on.

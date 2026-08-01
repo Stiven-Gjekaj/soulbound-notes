@@ -1,19 +1,6 @@
-<div align="center">
-
 ### The discussion vault behind Soulbound
 
 _Design notes, arguments, and the decisions they produced. Made by PaperTrail._
-
-<p align="center">
-  <a href="#what-this-is"><b>What This Is</b></a> |
-  <a href="#what-goes-here"><b>What Goes Here</b></a> |
-  <a href="#the-rules"><b>Rules</b></a> |
-  <a href="#opening-the-vault"><b>Obsidian</b></a> |
-  <a href="#how-notes-connect"><b>Linking</b></a> |
-  <a href="#related"><b>Related</b></a>
-</p>
-
-</div>
 
 ---
 
@@ -125,6 +112,6 @@ cover what is coming.
 
 That repository answers what and when. This one answers why.
 
-<div align="center">
-<sub>Start with the <a href="rules/scope.md">rules</a>.</sub>
-</div>
+---
+
+Start with [the rules](rules/scope.md).

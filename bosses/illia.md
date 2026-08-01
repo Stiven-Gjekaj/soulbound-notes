@@ -49,7 +49,7 @@ first run and skippable on every run after. Those are game-wide rules and they l
   rewind costs time, not progress. This is a property of her checkpoint rather than a rule
   every boss follows.
 - **Her fight sets the player's max HP to 20.**
-- **The player carries six items**, two stims, two bandages, a med kit and a lifeline, at 15,
+- **The player carries six items**, two stims, two bandages, a med kit and a hope, at 15,
   40, 65 and 100 percent. They exist so the player learns what ITEM does, not so they can
   out-heal a wave. See [health and healing](../gameplay/health-and-healing.md).
 

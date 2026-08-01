@@ -9,7 +9,7 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 ## Settled
 
 - **Healing items restore a percentage of max HP**, not a flat amount.
-- **Four healing items**, at 15, 40, 65 and 100 percent: stim, bandage, med kit and lifeline.
+- **Four healing items**, at 15, 40, 65 and 100 percent: stim, bandage, med kit and hope.
 - **The player carries two, two, one and one of them**, weakest to strongest. Six items.
 - **Fractions round up** to the nearest whole HP.
 - **An item heals on the turn it is used**, before the wave rather than after it.
@@ -38,37 +38,47 @@ has to retune the inventory every time a boss changes the numbers.
 | Stim | 15% | 2 | 3 | 0.30 |
 | Bandage | 40% | 2 | 8 | 0.80 |
 | Med kit | 65% | 1 | 13 | 0.65 |
-| Lifeline | 100% | 1 | 20 | 1.00 |
+| Hope | 100% | 1 | 20 | 1.00 |
 | **Total** | | **6** | | **2.75** |
 
 Three properties of that spread are worth naming, because they are what make the ladder teach
 something rather than just exist.
 
 **The count runs inverse to the strength.** Two of the weakest, one of the strongest. Nobody
-has to be told to save the lifeline, and nobody has to be told a stim is spendable. The
+has to be told to save the hope, and nobody has to be told a stim is spendable. The
 inventory explains its own economy by its shape, before a single description is read, which is
 exactly what an inventory in a tutorial should do.
 
-**The gaps are even, 25 points each, up to the lifeline.** No two of the first three are close
+**The gaps are even, 25 points each, up to the hope.** No two of the first three are close
 enough to be interchangeable at any health total. A stim is a top-up, a bandage is a recovery,
 a med kit is an emergency. The fourth breaks the pattern by being the only one that finishes
 the job, which is the right way for the rarest item to be different.
 
-**Only the lifeline is a full heal.** The other three leave the player short no matter when
+**Only the hope is a full heal.** The other three leave the player short no matter when
 they are used, so topping the bar off costs either two turns or the one item there is no second
 of.
 
-## Why lifeline
+## Why hope
 
 The other three are objects: a chemical, a dressing, a box of supplies. The fourth is the only
 one the player gets one of and the only one that finishes the job, so it should not read as a
-bigger box. Lifeline names what it does rather than what it is, which is what separates it from
-the ladder underneath it.
+bigger box.
 
-It also stays legible in a two column menu at 640x480, where "med kit" and any variation on
-"trauma kit" or "medical kit" would be a glance apart from each other. Transfusion and panacea
-were the other two considered: the first is long and the second belongs to a different register
-than stim and bandage.
+Hope is not an object at all. It is not even a thing that does something, the way a lifeline or
+a transfusion would be. It leaves the ladder rather than topping it, and that break is doing
+the work: the item that is different in every mechanical way is also the only one whose name
+belongs to a different kind of word. A player reading the list knows which one matters before
+they know what any of them heal.
+
+It fits the game it is in, too. Soulbound is a game about souls, and a full restore called Hope
+is the sort of thing this game gets to mean. The other three could belong to anything.
+
+It is also four characters long, which quietly removes it from the menu width problem below.
+
+**What lost:** lifeline, transfusion and panacea. Lifeline named the function rather than the
+object, which was the right instinct and half the distance. Transfusion was long for a two
+column menu. Panacea was the closest, and lost on sounding like it came from a different game
+than the one with a stim and a bandage in it.
 
 ## Six items does not fit on one page
 
@@ -191,7 +201,7 @@ numbers per boss are deferred to the fights that need them.
 - **Do the counts hold for every boss, or only the tutorial?** Six uses and 2.75 bars of healing
   against a thirteen turn fight is forgiving. That is right for a tutorial and probably wrong
   for the fights behind it.
-- **Are the item names final?** Stim, bandage and med kit were placeholders and lifeline was
+- **Are the item names final?** Stim, bandage and med kit were placeholders and hope was
   chosen against them. If any of the first three change, the fourth should be re-checked
   against whatever replaces them, since its job is to sit outside their pattern.
 

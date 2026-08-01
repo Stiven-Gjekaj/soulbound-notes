@@ -16,7 +16,8 @@ Related: [bosses](bosses.md), [gameplay](../gameplay/gameplay.md) for the rules 
 - **Phase 2** repeats the same three attacks in a different manner. Worked example: phase 1's
   bucket fills the arena from the bottom and the player climbs above the rising paint, phase
   2's bucket is thrown into the arena and the player dodges the droplets it throws off.
-- **Phase 3** is a full mini boss fight, an exam on whether the player got the gist.
+- **Phase 3** is a full mini boss fight, an exam on whether the player got the gist. Each
+  attack incorporates both of its earlier forms and alternates between them.
 - **She is in full colour.** Not desaturated.
 - **She can change the arena, but nothing persists between waves.** A canvas that fills up is
   a canvas nobody can fight in.
@@ -38,6 +39,10 @@ Related: [bosses](bosses.md), [gameplay](../gameplay/gameplay.md) for the rules 
 - **An ACT that lets the player paint back.** It would have made the fight a conversation in
   paint rather than a test. Rejected: it is not one of her attacks, and it was the most
   expensive item on the list by a distance.
+- **Overlapping telegraphs in phase 3.** Two paintings in progress at once, so that reading one
+  was no longer enough. Rejected in favour of alternating the two forms of each attack, which
+  tests recognition instead of parallel attention, is cheaper to author, and is far less likely
+  to produce a wave that is unfair by accident.
 
 ## The three attacks are three reading skills
 
@@ -102,15 +107,51 @@ three attacks is exactly 9. So:
 Four minutes does not mean longer waves. A 24 second wave is exhausting rather than hard. It
 means more waves, and they belong in phase 3.
 
-## Phase 3 gets one new thing, and it is not a fourth attack
+## The six forms
 
-Adding a fourth attack in the exam would undercut the point of an exam. The escalation should
-come from the three the player already knows.
+Two forms of each attack, one per phase, and phase 3 draws from both.
 
-The proposal: **in phase 3 the telegraphs overlap.** Two paintings in progress at once, so
-reading one is no longer enough and the player has to decide which brush matters first. It
-costs no new art and no new attack, it is the exam the first two phases were revising for, and
-it is the only moment where her adaptive improviser characterisation arrives at full strength.
+| Attack | Phase 1 | Phase 2 |
+| ------ | ------- | ------- |
+| Brush | To be worked out | Strikes down in sections across the arena, one after another, in the manner of Asgore's trident |
+| Bucket | Fills the arena from the bottom, the player climbs above the rising paint | Thrown into the arena, the player dodges the droplets it throws off |
+| Splodge | To be worked out | Faster, and two or three at once instead of one |
+
+The phase 2 forms all escalate along their own axis rather than borrowing another attack's.
+The sectioned brush is still a direction read, just a sequence of them. Two or three splodges
+is still a radius read, just several at once. Neither has drifted into being a different
+attack, which is what keeps the vocabulary of three intact.
+
+## Phase 3 is a recognition test, and that sets a hard art constraint
+
+Alternating the two forms turns phase 3 into something the first two phases cannot be: the
+player no longer knows which version is coming. Seeing the telegraph is no longer enough,
+because the telegraph now has to be identified before it can be answered.
+
+That is a better exam than running two attacks at once, and it comes with a constraint that
+has to hold or the phase is unfair:
+
+> The two forms of each attack must be tellable apart from the first moment of the brushstroke.
+
+If the rising bucket and the thrown bucket look identical for their first second, phase 3 asks
+the player to guess. Every pair needs a distinct opening gesture, and this is a requirement on
+the animation rather than a nice-to-have, so it belongs in the brief before anyone draws her.
+See [graphics](../graphics/graphics.md).
+
+## Wave count, and what "alternates" decides
+
+Whether the alternation happens inside a wave or between waves is the difference between two
+quite different fights, and the wave maths settles it either way:
+
+- **Between waves.** Phase 3 runs six waves, one per form. Total is 3 + 3 + 6 plus the
+  ultimate, about 13 waves, landing near three and a half minutes. Gentler, and closer to a
+  playlist than an exam.
+- **Within a wave.** Phase 3 runs three waves, one per attack, each switching forms as it
+  goes. Total is 3 + 3 + 3 plus the ultimate, about 10 waves, landing near two and a half
+  minutes. This is the version that actually tests recognition, and it is the shorter fight.
+
+Both sit inside the two to four minute budget. The within-a-wave version is the one that makes
+phase 3 an exam rather than a recap.
 
 ## The ultimate
 
@@ -143,6 +184,11 @@ decision, not a detail. See [progression](../gameplay/progression.md).
 - **How much healing does the player carry?** ITEM is taught in phase 1, so items exist. How
   many the player brings into the ultimate is the difficulty valve for the whole fight, and it
   is currently unset.
+- **Does phase 3 alternate inside a wave or between waves?** Inside is the recognition test and
+  the shorter fight, between is the recap and the longer one. The section above has the maths.
+- **What are the phase 1 brush and splodge?** Phase 2 has all three forms now. Phase 1 has only
+  the bucket, and phase 1 is the one carrying the tutorial, so its three are the ones that have
+  to be simplest.
 - **What separates the bucket from the splodge in practice?** Phase 2's thrown bucket throws
   off droplets, and phase 2's splodge is two or three splatters at once. Those are close
   enough that they could read as the same attack. The split on paper is volume against impact,

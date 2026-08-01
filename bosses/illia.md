@@ -48,9 +48,10 @@ first run and skippable on every run after. Those are game-wide rules and they l
 - **The clock keeps running through a death, a revive, and everything she says about it.** The
   rewind costs time, not progress. This is a property of her checkpoint rather than a rule
   every boss follows.
-- **The player carries basic healing only.** Stim, bandage and med kit, healing 15, 40 and 65
-  percent of max HP. They exist so the player learns what ITEM does, not so they can out-heal a
-  wave, and none of them is a full heal. The names are placeholders. See
+- **Her fight sets the player's max HP to 20.**
+- **The player carries the full four item kit**, four stims, three bandages, two med kits and
+  one full heal, at 15, 40, 65 and 100 percent. They exist so the player learns what ITEM does,
+  not so they can out-heal a wave. See
   [health and healing](../gameplay/health-and-healing.md).
 
 ## What lost
@@ -327,6 +328,21 @@ stops being balanced around healing: with an unlimited rewind and only basic ite
 difficulty valve is brush speed and the irritation flag, not how many bandages the player
 brought.
 
+### The numbers all land whole
+
+Her fight sets max HP to 20, which is what the engine already defaults to, so nothing has to be
+overridden for her. It also happens to make every healing percentage an exact whole number:
+15% is 3, 40% is 8, 65% is 13, 100% is 20. Nothing rounds.
+
+That is worth keeping. The tutorial is the one fight where the player is working out what these
+numbers mean, and it is the worst possible place to show them a value that has been rounded up
+from something else.
+
+Her kit is generous on purpose. Ten items covering just over four full bars of healing, against
+a fight of thirteen turns and an unlimited rewind, means the player cannot lose to running out
+of anything. Scarcity is not the lesson here. What ITEM is and what spending a turn on it costs
+are the lessons, and both survive abundance.
+
 ### The rewind costs time, not progress
 
 The clock does not stop for a death. It runs through dying, through her reviving the player,
@@ -368,17 +384,10 @@ re-enter. Her number running high is the number being right.
 - **What does she say when she revives the player, and how many ways?** It is charged to their
   time and it cannot be skipped on a first run, so one long line repeated a dozen times is the
   version to avoid.
-- **What max HP does she set?** Her fight sets the player's total the way every fight does, and
-  hers is the one the whole game's numbers get read against, since it is the first one anybody
-  sees. See [health and healing](../gameplay/health-and-healing.md), where the open questions
-  about the system itself live.
-- **What are the three items actually called?** Stim, bandage and med kit are placeholders and
-  the real names are a [writing](../writing/writing.md) job. Worth doing early, since the
-  tutorial is where the player learns the game's vocabulary and placeholder names get into
-  screenshots.
-- **How many of each does she give the player?** The counts are unset, and her fight is where
-  the player learns that items run out. See
-  [health and healing](../gameplay/health-and-healing.md).
+- **What are the items actually called?** Stim, bandage and med kit are placeholders, the
+  fourth has no name at all, and all four are a [writing](../writing/writing.md) job. Worth
+  doing early, since the tutorial is where the player learns the game's vocabulary and
+  placeholder names get into screenshots.
 - **What is in the ultimate, in what order?** Everything, in one wave, is the shape. Which
   forms, how many passes, and how long it runs is the last piece of the fight that is still
   entirely open, and it is the piece the whole thing ends on.

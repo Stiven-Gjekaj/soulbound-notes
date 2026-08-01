@@ -13,8 +13,12 @@ Related: [ui](ui.md), [progression](../gameplay/progression.md) for the rules it
 - **[Illia](../bosses/illia.md) is the only entry unlocked on a fresh save.** Clearing her
   unlocks the rest.
 - **Once cleared she is relabelled the tutorial boss** rather than boss one, and stays
-  replayable.
+  replayable. She does not move.
 - **She still counts toward completion.** The relabel changes her label and nothing else.
+- **One screen holds seven bosses, and a screen is a batch.** The roster grows by screens.
+- **Nothing explains the lock.** The player works out that clearing the first one opens the
+  rest.
+- **The screen says nothing about checkpoints.**
 
 ## What the locked state is made of
 
@@ -53,17 +57,39 @@ which is the only reason her unloseable fight has a skill ceiling at all. Until 
 set, the best time column can quietly mean two different things depending on which row is being
 read. See [progression](../gameplay/progression.md).
 
+## A screen is a batch, and a batch is seven
+
+The roster grows a screen at a time. Seven slots to a screen, one screen to a batch, and a new
+batch is a new screen rather than a longer list.
+
+This is the answer to what a live-service roster does to a fixed layout, and it is a better one
+than scrolling. Seven entries can be laid out once and never rearranged, a batch has a natural
+shape the player can see the whole of, and arrivals never disturb what is already there. It
+also means the capstone fight that ends each batch has an obvious home: the last slot on its
+own screen.
+
+The first screen is Illia and six others. All six are unmade, so the near-term state of the
+screen is one playable entry and six that are not yet anything, which is the same visual
+treatment as locked and for a different reason. That is fine while there is one screen and
+worth watching when there are two, because "locked until you clear something" and "not built
+yet" should probably not look identical to a player who has paid.
+
+## Nothing explains the lock
+
+The player works it out. On a fresh save one entry is available and six are not, and clearing
+the available one opens them.
+
+That is the right amount of explanation for a screen with seven things on it, one of which is
+obviously the way in. A line of text saying so would be telling the player something the layout
+already said.
+
 ## Open questions
 
-- **Does the relabel change her position in the list?** A tutorial boss sitting in the first
-  slot forever is one reading. Moving her out of the numbered run is another.
-- **What does the screen do when the roster grows?** The live-service plan in
-  [the Challenger](../general/the-challenger.md) adds bosses in batches, so this screen has to
-  hold a list that gets longer after a player has finished it. Completion counts change under
-  them, a cleared game becomes uncleared, and the layout needs somewhere to put arrivals.
-- **Is the lock state visible before it matters?** On a fresh save every entry but one is
-  greyed out, which is clear. What is less clear is whether the player is told why, or left to
-  work out that clearing the first one is the key.
-- **Does the screen say anything about checkpoints?** Each boss sets how far back a death sends
-  the player, and the player currently has no way to learn that except by dying. See
-  [progression](../gameplay/progression.md).
+- **Does a locked entry and an unbuilt entry look the same?** They do at the moment, because
+  both are just not available. Once a second batch is announced but not shipped, the difference
+  between "you have not earned this" and "this does not exist yet" starts to matter.
+- **What happens to completion when a screen is added?** A finished game becomes unfinished, and
+  the count the player was reading changes underneath them. See
+  [the Challenger](../general/the-challenger.md).
+- **Do cleared screens stay reachable?** Seven per screen is clean until there are five screens
+  and the player wants the boss on the second one.

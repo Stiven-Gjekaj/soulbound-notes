@@ -78,12 +78,28 @@ game feeling inconsistent. What it cannot do is vary without the player being ab
 one boss rewinds a turn and the next restarts the fight, the player finds that out by dying,
 and they should find it out some other way first.
 
+## Checkpoints announce themselves
+
+Reaching a checkpoint shows a notification in the top left of the screen. That is how the
+player learns the rule: not from a tooltip and not from dying, but from the game telling them
+the moment it becomes true.
+
+It is the right corner for it. The arena is centre-low, the boss sits above it, and the top
+left is the one part of a battle screen nothing else is using, so a notification there is
+visible without competing with anything the player has to read to survive.
+
+It does mean the notification carries the whole feature. A player who misses it has no other
+way to find out, and a fight whose checkpoint is the start of the battle presumably never shows
+one, so its absence has to be as legible as its presence. Whether "no notification" reads as
+"no checkpoints here" or as "you missed it" is a [ui](../ui/ui.md) problem.
+
+Whether a given boss charges deaths to its clock is deliberately not surfaced. It is a
+per-boss setting, and it was decided that the resulting inconsistency between best times does
+not matter enough to design around.
+
 ## Open questions
 
-- **Where is each boss's checkpoint?** Illia's is decided. The rest are unset, and the default
-  in everyone's head is currently "start of the fight" without that having been chosen.
-- **How does the player know where the checkpoint is before they die?** A per-boss dial the
-  player cannot see is a surprise rather than a rule.
-- **Which bosses charge deaths to the clock?** It is a per-boss setting now, and only Illia's
-  is decided. Leaving the rest unset means best time quietly means something different
-  boss to boss.
+- **Where is each boss's checkpoint?** Illia's is one turn. The rest get decided with the boss
+  they belong to rather than up front.
+- **What does the notification say, and how long does it stay?** It is the only place this
+  system is explained, so it is carrying more than a notification usually does.

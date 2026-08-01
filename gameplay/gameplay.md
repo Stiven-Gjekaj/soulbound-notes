@@ -19,6 +19,8 @@ Mechanics, difficulty and pacing: what the player is asked to do, and how hard i
 
 - [Progression and retries](progression.md), what is locked, what unlocks it, and what changes
   on a repeat run
+- [Health and healing](health-and-healing.md), how much health the player has and how much an
+  item gives back
 
 Read [the rules](../rules/scope.md) before writing, and start from the
 [README](../README.md).

@@ -43,8 +43,9 @@ first run and skippable on every run after. Those are game-wide rules and they l
   one they died on, without limit. Her checkpoint is one turn, which is the most generous
   setting of a rule every boss has. See [progression](../gameplay/progression.md).
 - **Rewound deaths still count** in her record on the boss select.
-- **The player carries basic healing only.** A stem, a med kit, a bandage. They are there so
-  the player learns what ITEM does, not so they can out-heal a wave.
+- **The player carries basic healing only.** Stim, bandage and med kit, healing least to most
+  in that order. They exist so the player learns what ITEM does, not so they can out-heal a
+  wave. The names are placeholders.
 
 ## What lost
 
@@ -296,12 +297,14 @@ Anything that ever compares death counts across bosses needs to know that.
 - **Is her fight timed across a rewind?** Records include a best time per boss. If the clock
   keeps running through a death and a revive, an unlimited rewind means her best time is still
   a real number. If it does not, her times are not comparable with anyone's, including her own.
-- **Are the item names final?** Stem, med kit and bandage are what they are called at the
-  moment. Naming is a [writing](../writing/writing.md) job and these read as placeholders.
-- **Do the three heal differently, or are they one item with three names?** Three items that
-  all restore the same amount teach the player nothing about ITEM except which button it is
-  under. Three that differ, a small instant one and a large slow one for instance, teach a
-  choice.
+- **What are the three actually called?** Stim, bandage and med kit are placeholders and the
+  real names are a [writing](../writing/writing.md) job. Worth doing early, since the tutorial
+  is where the player learns the game's vocabulary and placeholder names get into screenshots.
+- **Does the ladder differ by more than amount?** Three items that differ only in how much they
+  heal teach one lesson: bigger is better, always use the biggest. Giving them a second axis,
+  a cheap one that heals instantly against a large one that costs the rest of the turn, is what
+  turns ITEM from a button into a choice. Not required for a tutorial, but it is the cheapest
+  place to add depth.
 - **Does phase 3 alternate inside a wave or between waves?** Inside is the recognition test and
   the shorter fight, between is the recap and the longer one. The section above has the maths.
 - **Does the splodge count climb inside phase 3, or sit fixed above three?** "Three marks, and

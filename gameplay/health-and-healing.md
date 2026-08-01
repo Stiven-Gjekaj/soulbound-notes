@@ -191,10 +191,10 @@ numbers per boss are deferred to the fights that need them.
 - **Do the counts hold for every boss, or only the tutorial?** Six uses and 2.75 bars of healing
   against a thirteen turn fight is forgiving. That is right for a tutorial and probably wrong
   for the fights behind it.
-- **The engine already has something called Bandage.** `PlayerCharacter.cs` sets the default
-  armour to `"Bandage"` and the default weapon to `"Stick"`, both inherited from upstream, and
-  nothing in the Soulbound mod overrides either. As it stands the player would be wearing a
-  bandage while carrying two more in the bag. One of the two names has to move.
 - **Are the item names final?** Stim, bandage and med kit were placeholders and lifeline was
   chosen against them. If any of the first three change, the fourth should be re-checked
   against whatever replaces them, since its job is to sit outside their pattern.
+
+The engine used to call the default armour "Bandage", which collided with the healing item.
+The equipment was renamed rather than the item: the Challenger now starts with fists and a worn
+coat. See [the Challenger](../general/the-challenger.md).

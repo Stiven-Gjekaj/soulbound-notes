@@ -70,6 +70,32 @@ Nothing that came from anywhere. The Challenger arrives with themselves and what
 wearing, which is why the starting gear is worth nothing and why getting stronger has to be
 earned in the fights rather than brought to them.
 
+- **Weapon: fists.** They brought no weapon, because they are not from anywhere that would have
+  given them one. It is also the plainest statement the game can make about the premise: the
+  Challenger fights to grow stronger, and starts with only themselves to fight with.
+- **Armour: worn coat.** Travel-worn clothing rather than protection. Whatever they had on when
+  they crossed.
+
+Both replace names inherited from upstream, `"Stick"` and `"Bandage"`, which were placeholders
+from a different game and one of which collided with the healing item of the same name. The
+collision is what prompted the rename. The premise is what decided it.
+
+Two alternates were weighed and are worth keeping on the shelf: **resolve** and **drifter's
+coat**, which say the same things less literally. Fists and worn coat won on being immediately
+legible on a stats line at 640x480.
+
+### These are not cosmetic
+
+The names feed real numbers, so this is not a text change.
+`FightUIController.cs` computes damage dealt from `WeaponATK`, and `PlayerController.cs`
+reduces damage taken by `floor((DEF + ArmorDEF) / 5)`, so five points of armour is one point of
+damage prevented. Both values come from looking the equipment name up in the item library, so
+a name with no entry behind it resolves to zero.
+
+Zero is the right value for both here. Starting gear that does nothing is the point. But it
+means the rename is only finished when the item library agrees with it, rather than when the
+two strings in `PlayerCharacter.cs` change.
+
 ## Being addressed by a title
 
 Having a title as well as a name is quietly useful for [writing](../writing/writing.md). A boss

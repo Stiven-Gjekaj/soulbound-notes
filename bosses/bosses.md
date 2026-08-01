@@ -17,5 +17,9 @@ the last.
 - What the boss says, which goes in [writing](../writing/writing.md)
 - What its music does, which goes in [sound-design](../sound-design/sound-design.md)
 
+## The bosses
+
+- [Illia](illia.md), the first one, and the one carrying the tutorial
+
 Name the note after the boss. Read [the rules](../rules/scope.md), and start from the
 [README](../README.md).

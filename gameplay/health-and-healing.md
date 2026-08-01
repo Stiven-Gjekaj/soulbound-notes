@@ -13,6 +13,9 @@ Related: [gameplay](gameplay.md), [progression](progression.md),
 - **Fractions round up** to the nearest whole HP.
 - **The player is shown the percentage** when they use an item, not the HP figure.
 - **Max HP ramps up across the roster**, alongside difficulty.
+- **Each boss sets the player's max HP for its own fight.** The player does not carry a growing
+  total between fights.
+- **Damage ramps with it.** How much, and per boss, is deferred to the fights that need it.
 
 ## Why percentages
 
@@ -64,40 +67,34 @@ figure it corresponds to changes with every boss, so quoting it would teach a nu
 being true as soon as they move on. The health bar is already there for anyone who wants to
 know where they actually stand. See [ui](../ui/ui.md).
 
-## What percentages do not fix
+## Max HP is set by the fight, and damage rises with it
 
-Healing scales itself now. Damage does not, and damage is the number that actually decides how
-hard a fight is.
+Each boss sets the player's max HP for its own fight. Nothing is carried between fights.
 
-What matters to a player is how many hits the bar is worth:
+That is the only version that survives free boss selection. Once
+[Illia](../bosses/illia.md) is cleared the rest unlock together, so if max HP grew with clears
+then fighting a boss first and fighting it last would be different fights, the order would have
+an optimal solution, and a best time would depend on when in the run it was set. Setting it per
+fight keeps every boss the same every time it is played, which is what the records assume.
+
+It also puts the whole difficulty of a fight in one place. A boss decides how much health the
+player brings, how much damage it deals, and therefore how many mistakes it forgives, and none
+of those three can be tuned from outside the fight by accident.
+
+Damage ramps alongside max HP, which is what stops the ramp from working backwards. The number
+that matters to a player is how many hits the bar is worth:
 
 - 20 max HP against 3 damage a hit is about seven hits.
 - 60 max HP against 3 damage a hit is twenty hits.
 - 60 max HP against 9 damage a hit is seven hits again.
 
-So raising max HP on its own makes the later fights **easier**, which is backwards. If max HP
-ramps, damage has to ramp with it, or the ramp is undoing the difficulty curve it was meant to
-support.
+Raising max HP alone would have made the later fights easier. Raising both keeps the count of
+survivable mistakes under the boss's control, which is where it belongs.
 
-Which means the honest reason to raise max HP is not survivability, it is **resolution**. At 20
-HP there are only a few meaningfully different damage values. At 100 there is room to say that
-a graze costs 4 and a direct hit costs 20, and for the player to feel the difference. That is a
-good reason. It is just a different reason from the one it looks like.
-
-## Where max HP is set
-
-The reading here is that **each boss sets the player's max HP for its own fight**, rather than
-the player carrying a growing total between fights.
-
-That is the only version that survives free boss selection. Once
-[Illia](../bosses/illia.md) is cleared the rest unlock together, so if max HP grew with clears
-then fighting a boss first and fighting it last would be different fights, the order would
-have an optimal solution, and a best time would depend on when in the run it was set. Setting
-it per fight keeps every boss the same every time it is played, which is what the records
-assume.
-
-It also puts the whole difficulty of a fight in one place: the boss decides how much health the
-player brings, how much damage it deals, and therefore how many mistakes it forgives.
+So the reason to raise max HP is not survivability, it is **resolution**. At 20 HP there are
+only a handful of meaningfully different damage values. At 100 there is room to say a graze
+costs 4 and a direct hit costs 20, and for the player to feel the gap between them. The exact
+numbers per boss are deferred to the fights that need them.
 
 ## Open questions
 

@@ -161,9 +161,14 @@ blunter, more bored than wounded. See [writing](../writing/writing.md).
 ## Silhouette
 
 Rounded top, boxy middle, heavy feet. Beanie, overall bib and boots give her an outline that
-survives with no interior detail at all, which matters because her select entry sits beside six
-locked ones rendered as silhouettes and hers is the reference for that treatment. See
-[boss select](../ui/boss-select.md).
+survives with no interior detail at all.
+
+That used to matter because the [boss select](../ui/boss-select.md) drew locked entries as
+silhouettes and hers was the reference for that treatment. It no longer does: locked entries
+now show the boss's own icon under a padlock. The requirement survives the change anyway, for a
+different reason. Her icon sits on a turning wheel at whatever size the arc gives it, five
+entries on screen with the two at the ends scaled down and fading, so it has to stay
+identifiable small and dim. An outline that reads with no interior detail is what does that.
 
 The braid is what makes it hers rather than generic. It is a small asymmetric notch at head
 height, and it tells you which way she faces with no other information present. So it never

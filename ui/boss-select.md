@@ -8,8 +8,9 @@ Related: [ui](ui.md), [progression](../gameplay/progression.md) for the rules it
 
 ## Settled
 
-- **A locked boss shows as greyed out, with its name, a silhouette and a question mark.** It is
-  present rather than hidden, so the player can see how much game is waiting.
+- **A locked boss shows as greyed out, with its name, its own icon under a padlock, and a
+  question mark.** It is present rather than hidden, so the player can see how much game is
+  waiting.
 - **[Illia](../bosses/illia.md) is the only entry unlocked on a fresh save.** Clearing her
   unlocks the rest.
 - **Once cleared she is relabelled the tutorial boss** rather than boss one, and stays
@@ -27,13 +28,21 @@ clear which is which when the screen gets laid out:
 
 - **Greyed out** says the entry is not available.
 - **Its name** says the game is not hiding anything.
-- **A silhouette** stands in for whatever art the boss has, so the slot has the same shape
-  locked as unlocked and the layout does not jump when it changes.
+- **Its own icon** occupies the slot, so the slot has the same shape locked as unlocked and the
+  layout does not jump when it changes.
+- **A padlock over the icon** says why it cannot be picked.
 - **A question mark** stands in for the records, which are the part that genuinely has no value
   yet.
 
-Exactly how they sit together is a layout job, but the split above is the reasoning: the name
-and the shape are known, the art and the records are not.
+Exactly how they sit together is a layout job, but the split above is the reasoning: the name,
+the shape and the art are known, and the records are not.
+
+This changed once. It used to be a silhouette rather than the boss's own icon, on the reasoning
+that the art should be hidden along with everything else, and a shared stand-in shape would
+hold the slot open. A padlock over the real icon does the holding-open just as well and says
+something the silhouette could not, which is that the thing behind the lock is a specific boss
+rather than an unknown. What it gives up is the tease: the player now sees what is coming
+rather than only that something is. That is the trade, and it was made deliberately.
 
 ## What the screen has to show
 
@@ -63,10 +72,29 @@ The roster grows a screen at a time. Seven slots to a screen, one screen to a ba
 batch is a new screen rather than a longer list.
 
 This is the answer to what a live-service roster does to a fixed layout, and it is a better one
-than scrolling. Seven entries can be laid out once and never rearranged, a batch has a natural
-shape the player can see the whole of, and arrivals never disturb what is already there. It
-also means the capstone fight that ends each batch has an obvious home: the last slot on its
-own screen.
+than scrolling. Seven entries can be laid out once and never rearranged, and arrivals never
+disturb what is already there. It also means the capstone fight that ends each batch has an
+obvious home: the last slot on its own screen.
+
+## The seven sit on a wheel
+
+They are shown on a half circle down the left, turning past a fixed point. Whichever entry is
+selected is held at the middle of the arc and the rest curve away above and below it, five of
+the seven on screen at a time, the two at the ends fading as they arrive and leave. Beside it a
+panel carries that entry's portrait, name, subtitle and its five records with room to label
+each one.
+
+The wheel is what buys the panel. A screen that showed all seven at once could give each of
+them one line, and a line cannot hold a portrait or five labelled records at a size worth
+reading. Choosing between showing everything at once and showing any of it properly, this
+picks the second.
+
+It does cost something the argument above claimed, and it is worth being straight about it:
+"a batch has a natural shape the player can see the whole of" is no longer quite true, because
+two of the seven are off the ends at any moment. The count is still fixed and still seven, the
+wheel still holds its shape, and turning it reaches everything in at most three presses. But
+the whole batch is not in view at once any more, and if that turns out to matter more than the
+panel does, this is the decision to revisit.
 
 The first screen is Illia and six others. All six are unmade, so the near-term state of the
 screen is one playable entry and six that are not yet anything, which is the same visual

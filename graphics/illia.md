@@ -14,7 +14,9 @@ Related: [graphics](graphics.md), [Illia](../bosses/illia.md) for the fight this
 - **Bare forearms.**
 - **Brush in her right hand**, which is the viewer's left when she faces the player.
 - **Nineteen years old**, with brown hair.
+- **Blue overalls.**
 - **Five wind-up poses**, one per attack form.
+- **The beanie is its own sprite**, layered over the body rather than drawn into each pose.
 
 ## The one rule
 
@@ -76,10 +78,9 @@ lower still. **The beanie is the one safe place for a saturated signature colour
 sits about as far from the brush hand as anything on her does, and a boss select entry wants a
 colour you recognise from across the screen.
 
-Brown hair narrows the overalls. Brown hair against tan canvas puts two low-saturation browns
-next to each other at head and torso, and at this resolution they merge into one mass with a
-beanie floating on top. **Denim blue separates them and canvas does not**, so unless the beanie
-is carrying an unusual amount of contrast on its own, the overalls want to be blue.
+The overalls are blue. Brown hair against tan canvas would have put two low-saturation browns
+at head and torso, and at this resolution they merge into one mass with a beanie floating on
+top. Denim separates them.
 
 It also means the hair is not a recognition cue. Brown is the least distinctive colour a
 character can have, which is fine here because it puts all of that work on the beanie, where
@@ -100,11 +101,28 @@ should be, since it costs nothing.
 needs an idle, and the beanie tell needs a pushed-back, a straightened and a tugged-down.
 Counted naively that is nine poses rather than five.
 
-It does not have to be. **Draw the beanie as its own element layered over the body.** Three hat
-positions across six body states gives eighteen readable combinations out of nine assets, the
-hat tell becomes available in every pose rather than only in an idle, and adjusting the tell
-later costs three small sprites instead of a redraw. The engine loads sprites individually, so
-layering is a scripting question rather than an art one.
+## The beanie is a separate sprite
+
+Six body states and three hat positions, nine assets, eighteen readable combinations. The hat
+tell works in every pose rather than only in an idle, and tuning it later costs three small
+sprites instead of nine redraws.
+
+This is the engine's own documented pattern rather than a trick.
+`docs/api/sprites-and-animation.md` uses a multi-part character as its worked example,
+building one out of separate torso, legs and head sprites joined with `SetParent`, with each
+part's position relative to its parent. Illia is that with two parts instead of three.
+
+Two things follow, and both land on whoever draws her rather than on whoever scripts it.
+
+**Her head does not move between poses.** A parented sprite sits at a fixed offset from its
+parent, so if her head shifts as she winds up an arm, the beanie drifts off it. Keeping the
+head at a constant position across all six body states makes the offset a single number that is
+right everywhere. This costs nothing, because every gesture in the fight is in the arm.
+
+**The body sprite carries a full head of hair.** The beanie is drawn on top and the three
+positions cover different amounts of the crown, so the pushed-back state exposes hair that the
+tugged-down state hides. If the body is drawn assuming a hat, the tell reveals a bald patch the
+first time she pushes it back.
 
 ## She is nineteen
 
@@ -139,11 +157,6 @@ focal point.
   shirt decides whether her upper arm reads as part of the gesture or as part of the torso.
 - **How much hair shows under the beanie**, beyond the braid. It is the difference between the
   beanie being a hat she wears and the beanie being her head shape.
-- **Are the overalls blue?** See the palette note. Brown hair makes it close to a decision
-  rather than a preference.
-- **Is the beanie a separate sprite?** If the hat tell is layered rather than drawn into each
-  pose, the asset count roughly halves and the tell works in every pose. Worth deciding before
-  anything is drawn rather than after.
 - **Anything else Soultale fixes about her.** Age and hair are answered. Build, height and
   whatever else the story has already committed to are not, and this page is what the fight
   requires of her rather than who she is.

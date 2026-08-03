@@ -13,6 +13,8 @@ Related: [graphics](graphics.md), [Illia](../bosses/illia.md) for the fight this
 - **Paint-stained.**
 - **Bare forearms.**
 - **Brush in her right hand**, which is the viewer's left when she faces the player.
+- **Nineteen years old**, with brown hair.
+- **Five wind-up poses**, one per attack form.
 
 ## The one rule
 
@@ -74,6 +76,46 @@ lower still. **The beanie is the one safe place for a saturated signature colour
 sits about as far from the brush hand as anything on her does, and a boss select entry wants a
 colour you recognise from across the screen.
 
+Brown hair narrows the overalls. Brown hair against tan canvas puts two low-saturation browns
+next to each other at head and torso, and at this resolution they merge into one mass with a
+beanie floating on top. **Denim blue separates them and canvas does not**, so unless the beanie
+is carrying an unusual amount of contrast on its own, the overalls want to be blue.
+
+It also means the hair is not a recognition cue. Brown is the least distinctive colour a
+character can have, which is fine here because it puts all of that work on the beanie, where
+the rule already wanted it.
+
+## Five poses is exactly the minimum, so nothing is spare
+
+Five wind-ups covers one per attack form: two brush, two bucket, one splodge. There is no
+redundancy in that, which has two consequences worth building around.
+
+**The two pairs need the most separation and get the least help.** Brush against brush and
+bucket against bucket are the recognition test, and
+[Illia](../bosses/illia.md) requires each pair to be tellable apart from the first moment of the
+stroke. Splodge has no partner, so its pose is free to be the most distinct of the five and
+should be, since it costs nothing.
+
+**Five wind-ups is not five sprites.** She is on screen during every dialogue turn, so she also
+needs an idle, and the beanie tell needs a pushed-back, a straightened and a tugged-down.
+Counted naively that is nine poses rather than five.
+
+It does not have to be. **Draw the beanie as its own element layered over the body.** Three hat
+positions across six body states gives eighteen readable combinations out of nine assets, the
+hat tell becomes available in every pose rather than only in an idle, and adjusting the tell
+later costs three small sprites instead of a redraw. The engine loads sprites individually, so
+layering is a scripting question rather than an art one.
+
+## She is nineteen
+
+Worth stating because it reaches past the art. Farm overalls, a beanie and a braid on a
+nineteen year old reads as somebody who works rather than somebody with a title, which is the
+right register for a boss who is testing you rather than trying to kill you.
+
+It also sets the voice. Her seven responses to being attacked run down toward irritation, and a
+nineteen year old runs out of patience differently from a master with a grievance: shorter,
+blunter, more bored than wounded. See [writing](../writing/writing.md).
+
 ## Silhouette
 
 Rounded top, boxy middle, heavy feet. Beanie, overall bib and boots give her an outline that
@@ -93,12 +135,15 @@ focal point.
 
 ## Open questions
 
-- **What does Soultale already fix about her?** Build, age, species if that is a question, hair
-  colour. This page is what the fight requires of her, not who she is, and the story may have
-  answered several of these already.
 - **What is under the overalls?** Bare forearms are settled, the shoulders are not, and the
   shirt decides whether her upper arm reads as part of the gesture or as part of the torso.
-- **How much hair shows under the beanie**, beyond the braid.
-- **How many wind-up poses actually get drawn.** Five is the minimum the fight needs, one per
-  attack form. Fewer means two attacks share a tell, which
-  [Illia](../bosses/illia.md) says they must not.
+- **How much hair shows under the beanie**, beyond the braid. It is the difference between the
+  beanie being a hat she wears and the beanie being her head shape.
+- **Are the overalls blue?** See the palette note. Brown hair makes it close to a decision
+  rather than a preference.
+- **Is the beanie a separate sprite?** If the hat tell is layered rather than drawn into each
+  pose, the asset count roughly halves and the tell works in every pose. Worth deciding before
+  anything is drawn rather than after.
+- **Anything else Soultale fixes about her.** Age and hair are answered. Build, height and
+  whatever else the story has already committed to are not, and this page is what the fight
+  requires of her rather than who she is.

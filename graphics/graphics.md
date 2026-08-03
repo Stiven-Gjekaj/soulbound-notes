@@ -15,6 +15,10 @@ Art direction, and everything the player sees once it has been drawn.
 - What an attack does to the player, which goes in [bosses](../bosses/bosses.md)
 - Finished assets, which ship from the game repository. [Scope](../rules/scope.md) explains.
 
+## The notes
+
+- [Illia's look](illia.md), what she wears and the read hierarchy her fight depends on
+
 Reference images and screenshots go in `attachments/`, named after what they show rather than
 what the camera called them. [Writing notes](../rules/notes.md) has the convention, and the
 [README](../README.md) is the way back.

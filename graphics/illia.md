@@ -13,8 +13,9 @@ Related: [graphics](graphics.md), [Illia](../bosses/illia.md) for the fight this
 - **Paint-stained.**
 - **Bare forearms.**
 - **Brush in her right hand**, which is the viewer's left when she faces the player.
-- **Nineteen years old**, with brown hair.
-- **Blue overalls.**
+- **Nineteen years old**, five foot eight and lean. The height is canon.
+- **Brown hair**, with some of it showing past the beanie.
+- **Blue overalls**, over basic clothes.
 - **Five wind-up poses**, one per attack form.
 - **The beanie is its own sprite**, layered over the body rather than drawn into each pose.
 
@@ -48,6 +49,29 @@ edge; a long dark sleeve swallows the same motion and takes the fight's readabil
 
 The forearm and the brush are not competing. The arm is the vector and the tip is the point it
 aims: together they read as one gesture, which is what a telegraph needs to be.
+
+**The shirt is functionally the sleeve.** Almost all of it sits behind the overall bib, so the
+only part of it anyone sees is the upper arm, which is the top half of every gesture. That
+makes its value a readability decision rather than a wardrobe one: a dark sleeve leaves only
+the forearm visible against black and the telegraph reads from the elbow down, which is half
+the arc. Something light or mid keeps the whole arm in play, and the sleeve edge then gives the
+gesture a natural articulation point partway along it.
+
+## Lean, and not trying to be imposing
+
+Five foot eight and lean means she is not a physically threatening shape, and she should not be
+drawn as one. Everything dangerous about this fight is in the arena, not in her posture. That
+matches a boss who is testing rather than killing, and it is why the brush hierarchy works: the
+loudest thing about her is the tool, which is exactly the right reading for someone who thinks
+of this as work.
+
+Loose overalls on a lean frame also give a useful silhouette: a narrow body inside fabric that
+does not fit closely. It reads as working clothes rather than a costume, and it keeps the boxy
+middle the outline needs without making her bulky.
+
+One knock-on for [boss select](../ui/boss-select.md): she is a tall, narrow sprite, roughly
+three times as high as she is wide. Seven entries share a screen, and the slot proportions
+should suit that rather than fighting it.
 
 ## The beanie carries the run-down
 
@@ -153,10 +177,9 @@ focal point.
 
 ## Open questions
 
-- **What is under the overalls?** Bare forearms are settled, the shoulders are not, and the
-  shirt decides whether her upper arm reads as part of the gesture or as part of the torso.
-- **How much hair shows under the beanie**, beyond the braid. It is the difference between the
-  beanie being a hat she wears and the beanie being her head shape.
-- **Anything else Soultale fixes about her.** Age and hair are answered. Build, height and
-  whatever else the story has already committed to are not, and this page is what the fight
-  requires of her rather than who she is.
+- **How light is the sleeve?** The only decision left that the fight actually depends on, for
+  the reason above. Everything else here can be adjusted after the first generation; this one
+  changes how much of the telegraph the player can see.
+- **Which paint colours are hers?** The brush tip takes the colour of the attack it is about to
+  make, so brush, bucket and splodge each need one, distinct from each other and from the blue
+  of the overalls.
